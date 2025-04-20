@@ -12,7 +12,7 @@ import { BsCart2 } from "react-icons/bs";
 export default function Navbar() {
   return (
     <div>
-      <div className="w-[80%] mx-auto mt-[30px] mb-[30px]">
+      <div className="w-[80%] mx-auto mt-[30px] mb-[30px] z-50">
         <div className="flex items-center">
           <div className="logo flex gap-[50px] items-center">
             <img src="/logo.png" alt="" className="w-[50px] h-[50px]" />

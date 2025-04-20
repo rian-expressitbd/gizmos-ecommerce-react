@@ -1,21 +1,30 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const slides = [
   {
+    title: "Computers up to – 15% off",
     image: "/slider1.jpg",
-    title: "Up to 20% off in MacBook",
-    description: "This is the description for slide one.",
+    tagline: "The biggest risk is a missed opportunity.",
+    category: "Game Joysticks",
+    description: "Happy Joysticks celebrates the game! People play a million!",
+    action: "Shop Now",
   },
   {
+    title: "Laptops up to 20% off",
     image: "/slider2.jpg",
-    title: "Up to 20% off in iPhone",
-    description: "This is the description for slide two.",
+    tagline: "The biggest risk is a missed opportunity.",
+    category: "Game Joysticks",
+    action: "Shop Now",
   },
   {
+    title: "Smartphones up to - 30% off",
     image: "/slider3.jpg",
-    title: "Up to 20% off in Headphones",
-    description: "This is the description for slide three.",
+    tagline: "The biggest risk is a missed opportunity.",
+    category: "Monitor & Keyboards",
+    action: "Shop Now",
   },
 ];
 
@@ -31,59 +40,88 @@ export default function Slider() {
   };
 
   return (
-    <div className="bg-[#F3F6FB] py-10 h-full">
-      <div className="mx-auto w-[80%] flex flex-col items-center gap-10">
-        {/* Navigation Buttons */}
-        <div className="flex justify-between w-full mb-4">
-          <button
-            onClick={prevSlide}
-            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-          >
-            Prev
-          </button>
-          <button
-            onClick={nextSlide}
-            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-          >
-            Next
-          </button>
-        </div>
+    <div className="bg-[#F3F6FB] h-[395.83px] relative">
+      <Button
+        onClick={prevSlide}
+        title="prev-btn"
+        className="absolute left-0 top-1/2 -translate-y-1/2 bg-transparent text-black px-4 py-2 rounded-md transition z-10"
+      >
+        <FaChevronLeft />
+      </Button>
 
-        {/* Slide Content */}
+      <Button
+        onClick={nextSlide}
+        title="next-btn"
+        className="absolute right-0 top-1/2 -translate-y-1/2 bg-transparent text-black px-4 py-2 rounded-md transition z-10"
+      >
+        <FaChevronRight />
+      </Button>
+      
+      <div className="mx-auto w-[80%] h-full relative">
         <AnimatePresence mode="wait">
           <motion.div
             key={current}
-            initial={{ opacity: 0, y: -100 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 100 }}
-            transition={{ duration: 0.6 }}
-            className="relative w-full"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+            className="flex flex-col md:flex-row items-center gap-10 h-full"
           >
-            {/* Text Slide */}
-            <motion.div
-              initial={{ x: -100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-left max-w-md left-0 absolute z-50"
-            >
-              <h2 className="text-3xl font-bold mb-4">
+            {/* Text Content - Left Side */}
+            <div className="md:w-1/2 w-full space-y-6">
+              <motion.h2
+                initial={{ y: 20 }}
+                animate={{ y: 0 }}
+                className="text-4xl font-bold text-gray-900"
+              >
                 {slides[current].title}
-              </h2>
-              <p className="text-lg text-gray-700">
-                {slides[current].description}
-              </p>
-            </motion.div>
+              </motion.h2>
 
-            {/* Image Slide */}
+              <motion.p
+                initial={{ y: 20 }}
+                animate={{ y: 0 }}
+                transition={{ delay: 0.1 }}
+                className="text-lg text-gray-600"
+              >
+                {slides[current].tagline}
+              </motion.p>
+
+              {slides[current].category && (
+                <motion.div
+                  initial={{ y: 20 }}
+                  animate={{ y: 0 }}
+                  transition={{ delay: 0.2 }}
+                  className="mt-8"
+                >
+                  {slides[current].description && (
+                    <p className="text-gray-600">
+                      {slides[current].description}
+                    </p>
+                  )}
+                  {slides[current].action && (
+                    <Button
+                      title="action-btn"
+                      className="mt-4 bg-[#2453D4] flex justify-between gap-3 items-center text-white px-6 py-2 rounded-md hover:bg-gray-800 transition"
+                    >
+                      <p className="text-md">{slides[current].action}</p>
+                      <FaChevronRight />
+                    </Button>
+                  )}
+                </motion.div>
+              )}
+            </div>
+
+            {/* Image with vertical slide animation */}
             <motion.div
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 100, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              className="md:w-1/2 w-full z-10"
             >
               <img
                 src={slides[current].image}
                 alt={slides[current].title}
-                className="rounded-lg w-full  max-h-[364.55px] absolute right-0"
+                className="rounded-lg object-cover w-[950px] h-[395.83px] z-10"
               />
             </motion.div>
           </motion.div>
