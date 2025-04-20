@@ -1,11 +1,12 @@
 import "./index.css";
-import Categories from "./pages/Categories/Categories";
-import Featured from "./pages/Featured/Featured";
-import FeaturedGrid from "./pages/FeaturedGrid/FeaturedGrid";
-import Header from "./pages/Header/Header";
-import Navbar from "./pages/Navbar/Navbar";
-import NavbarLower from "./pages/Navbar/NavbarLower";
-import Slider from "./pages/Slider/Slider";
+import Categories from "./pages/components/Categories/Categories";
+import Featured from "./pages/components/Featured/Featured";
+import FeaturedGrid from "./pages/components/FeaturedGrid/FeaturedGrid";
+import Header from "./pages/components/Header/Header";
+import MoreCategories from "./pages/components/MoreCategories/MoreCategories";
+import Navbar from "./pages/components/Navbar/Navbar";
+import NavbarLower from "./pages/components/Navbar/NavbarLower";
+import Slider from "./pages/components/Slider/Slider";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Featured />
       <Slider />
       <FeaturedGrid />
+      <MoreCategories />
     </>
   );
 }
