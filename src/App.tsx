@@ -1,14 +1,15 @@
 import "./index.css";
-import Brands from "./pages/components/Brands/Brands";
-import Categories from "./pages/components/Categories/Categories";
-import Featured from "./pages/components/Featured/Featured";
-import FeaturedGrid from "./pages/components/FeaturedGrid/FeaturedGrid";
-import Header from "./pages/components/Header/Header";
-import MoreCategories from "./pages/components/MoreCategories/MoreCategories";
-import Navbar from "./pages/components/Navbar/Navbar";
-import NavbarLower from "./pages/components/Navbar/NavbarLower";
-import Slider from "./pages/components/Slider/Slider";
-import TopCategories from "./pages/components/TopCategories/TopCategories";
+import Brands from "./components/Home/Brands/Brands";
+import Categories from "./components/Home/Categories/Categories";
+import Featured from "./components/Home/Featured/Featured";
+import FeaturedGrid from "./components/Home/FeaturedGrid/FeaturedGrid";
+import Header from "./components/Home/Header/Header";
+import MoreCategories from "./components/Home/MoreCategories/MoreCategories";
+import Navbar from "./components/Home/Navbar/Navbar";
+import NavbarLower from "./components/Home/Navbar/NavbarLower";
+import Slider from "./components/Home/Slider/Slider";
+import TopCategories from "./components/Home/TopCategories/TopCategories";
+import Blogs from "./components/Home/Blogs/Blogs";
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
       <FeaturedGrid />
       <MoreCategories />
       <TopCategories />
-      <Brands/>
+      <Brands />
+      <Blogs />
     </>
   );
 }
