@@ -40,7 +40,7 @@ export default function Slider() {
   };
 
   return (
-    <div className="bg-[#F3F6FB] h-[395.83px] relative">
+    <div className="bg-[#F3F6FB] h-[395.83px] relative mb-[50px]">
       <Button
         onClick={prevSlide}
         title="prev-btn"
