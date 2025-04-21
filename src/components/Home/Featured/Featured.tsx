@@ -1,4 +1,5 @@
 import { ProductCard } from "@/components/ui/cards/product-card";
+import { Link } from "react-router-dom";
 
 export default function Featured() {
   const products = [
@@ -81,7 +82,10 @@ export default function Featured() {
       <h2 className="text-2xl font-semibold mb-5">Featured Products:</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-10 gap-x-10">
         {products.map((product) => (
-          <ProductCard product={product} />
+          <Link to={`/product/${product.id}`}>
+            {" "}
+            <ProductCard product={product} />
+          </Link>
         ))}
       </div>
     </div>

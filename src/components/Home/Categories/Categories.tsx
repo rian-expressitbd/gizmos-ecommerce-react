@@ -24,7 +24,7 @@ export default function Categories() {
   ];
 
   return (
-    <div className="mx-auto my-[50px] container">
+    <div className="mx-auto my-[50px] w-[90%]">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         {categories.map((category) => (
           <div key={category.id} className="relative">

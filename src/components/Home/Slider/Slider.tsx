@@ -58,7 +58,7 @@ export default function Slider() {
         <FaChevronRight />
       </Button>
 
-      <div className="container mx-auto px-4 py-6">
+      <div className="w-[90%] mx-auto px-4 py-6">
         <AnimatePresence mode="wait">
           <motion.div
             key={current}

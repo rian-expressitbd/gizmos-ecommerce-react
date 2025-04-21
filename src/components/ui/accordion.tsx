@@ -21,11 +21,11 @@ export const AccordionTrigger = ({
 }: AccordionTriggerProps) => {
   return (
     <div
-      className="flex justify-between items-center cursor-pointer p-4 bg-gray-100 dark:bg-gray-700 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+      className="flex justify-between items-center cursor-pointer p-4 border-b border-gray-200 hover:bg-gray-50 transition-colors"
       onClick={onClick}
     >
-      {children}
-      <span className="transform transition-transform duration-200">
+      <span className="font-medium text-gray-900">{children}</span>
+      <span className="transform transition-transform duration-200 text-gray-500">
         {isOpen ? "▲" : "▼"}
       </span>
     </div>
@@ -43,9 +43,7 @@ export const AccordionContent = ({
         isOpen ? "max-h-96" : "max-h-0"
       }`}
     >
-      <div className="p-4 bg-white dark:bg-gray-700 rounded-b-lg">
-        {children}
-      </div>
+      <div className="p-4 bg-white">{children}</div>
     </div>
   );
 };
@@ -54,17 +52,18 @@ export const AccordionContent = ({
 type AccordionProps = {
   trigger: React.ReactNode;
   children: React.ReactNode;
+  defaultOpen?: boolean; // Added this prop type
 };
 
-export const Accordion = ({ trigger, children }: AccordionProps) => {
-  const [isOpen, setIsOpen] = useState(false);
+export const Accordion = ({ trigger, children, defaultOpen = false }: AccordionProps) => {
+  const [isOpen, setIsOpen] = useState(defaultOpen);
 
   const toggleAccordion = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <div className="mb-2">
+    <div className="mb-1 border border-gray-200 rounded-lg overflow-hidden">
       <AccordionTrigger onClick={toggleAccordion} isOpen={isOpen}>
         {trigger}
       </AccordionTrigger>
