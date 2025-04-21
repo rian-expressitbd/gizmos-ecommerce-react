@@ -3,6 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  overflow-x: hidden;
+}
 @layer base {
   :root {
     --color-primary: #696fc4;
@@ -252,8 +255,6 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
-
-
 
 @layer base {
   * {

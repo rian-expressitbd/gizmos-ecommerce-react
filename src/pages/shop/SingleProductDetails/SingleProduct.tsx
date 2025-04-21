@@ -8,14 +8,14 @@ import { FiShoppingCart } from "react-icons/fi";
 export default function SingleProduct() {
   const [count, setCount] = useState(0);
   return (
-    <div className="w-[90%] mx-auto mt-[50px] mb-[50px] flex flex-col xl:flex-row gap-4">
+    <div className=" mx-auto mt-[50px] mb-[50px] flex flex-col xl:flex-row gap-4">
       <Image
         src="/featured7.jpg"
         alt="monitor"
         className="border-gray-300 border-[0.5px] w-full  xl:w-[670px] "
       />
-      <div className="w-[670px] ">
-        <h1 className="text-5xl leading-[1.5] font-semibold">
+      <div className="w-full lg:w-[670px] ">
+        <h1 className="text-lg lg:text-5xl leading-[1.5] font-semibold">
           4K Smart Monitor Vantablack Expo GPS-8377366J
         </h1>
         <h2 className="text-3xl mt-[50px]">$1,150</h2>
