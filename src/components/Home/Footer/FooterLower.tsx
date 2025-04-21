@@ -1,3 +1,4 @@
+import { Image } from "@/components/ui/image";
 import { FiHeadphones, FiTruck, FiTag } from "react-icons/fi";
 
 export default function FooterLower() {
@@ -26,6 +27,12 @@ export default function FooterLower() {
           <FiTag className="text-white" />
           <span>Save up to 20%</span>
         </div>
+      </div>
+      <div className="flex flex-col md:flex-row justify-between items-center">
+        <p className="text-md text-gray-400">
+          © {new Date().getFullYear()} Qode Interactive, All Rights Reserved
+        </p>
+        <Image src="/payments-icons.png" alt="payment_icons" />
       </div>
     </div>
   );
