@@ -1,4 +1,6 @@
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Image } from "@/components/ui/image";
 import type { FC } from "react";
@@ -35,7 +37,7 @@ export default function Blogs() {
       title: "Check Out Our New App!",
       excerpt:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue ligula, feugiat ut nulla case elitr.",
-      image: "/blog-app.jpg",
+      image: "/blog1.jpg",
     },
     {
       id: 2,
@@ -44,7 +46,7 @@ export default function Blogs() {
       title: "Experience a New Type of Gaming",
       excerpt:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue ligula, feugiat ut nulla case elitr.",
-      image: "/blog-gaming.jpg",
+      image: "/blog2.jpg",
     },
     {
       id: 3,
@@ -53,7 +55,7 @@ export default function Blogs() {
       title: "The Best Headphones For Music",
       excerpt:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue ligula, feugiat ut nulla case elitr.",
-      image: "/blog-headphones.jpg",
+      image: "/blog3.jpg",
     },
     {
       id: 4,
@@ -62,7 +64,7 @@ export default function Blogs() {
       title: "Latest Smartphone Trends",
       excerpt:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue ligula, feugiat ut nulla case elitr.",
-      image: "/blog-smartphone.jpg",
+      image: "/blog4.jpg",
     },
     {
       id: 5,
@@ -71,16 +73,7 @@ export default function Blogs() {
       title: "Top Wearable Devices 2022",
       excerpt:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue ligula, feugiat ut nulla case elitr.",
-      image: "/blog-wearables.jpg",
-    },
-    {
-      id: 6,
-      category: "AUDIO",
-      date: "DECEMBER 10, 2022",
-      title: "Wireless Earbuds Comparison",
-      excerpt:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue ligula, feugiat ut nulla case elitr.",
-      image: "/blog-earbuds.jpg",
+      image: "/blog5.jpg",
     },
   ];
 
@@ -128,7 +121,7 @@ export default function Blogs() {
           <Slider {...settings}>
             {blogPosts.map((post) => (
               <div key={post.id} className="px-4">
-                <div className="bg-[#F3F6FB] p-6 rounded-xl shadow hover:shadow-lg transition-shadow duration-300 h-full flex flex-col">
+                <div className="p-6 rounded-xl  transition-shadow duration-300 h-full flex flex-col">
                   {/* Image */}
                   <div className="mb-4 overflow-hidden rounded-lg">
                     <Image
