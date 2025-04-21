@@ -10,6 +10,9 @@ import RelatedProducts from "./RelatedProducts";
 export default function SingleProductDetails() {
   return (
     <>
+      {/* tasks */}
+      {/* variable products in single product details page  */}
+      {/* modify the accordion  */}
       <Header />
       <Navbar />
       <NavbarLower />
