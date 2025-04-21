@@ -10,6 +10,7 @@ import NavbarLower from "./components/Home/Navbar/NavbarLower";
 import Slider from "./components/Home/Slider/Slider";
 import TopCategories from "./components/Home/TopCategories/TopCategories";
 import Blogs from "./components/Home/Blogs/Blogs";
+import Footer from "./components/Home/Footer/Footer";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <TopCategories />
       <Brands />
       <Blogs />
+      <Footer />
     </>
   );
 }

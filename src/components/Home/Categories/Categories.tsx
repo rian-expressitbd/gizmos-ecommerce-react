@@ -31,7 +31,7 @@ export default function Categories() {
             <div className="absolute left-0 p-6 h-[100%]">
               <div className="flex flex-col justify-between h-full">
                 <h3 className="text-lg fornt-semibold">{category.title}</h3>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between w-[90px]">
                   <p className="font-bold text-sm">Shop Now</p>
                   <FaChevronRight />
                 </div>

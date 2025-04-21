@@ -23,7 +23,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
       {/* Header with category and action icons */}
       <div className="flex justify-between">
         <p className="text-xs text-gray-400">{product.category}</p>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3"> 
           <FaRegHeart className="cursor-pointer hover:text-red-500" />
           <TbArrowsDoubleNeSw className="cursor-pointer hover:text-blue-500" />
         </div>
