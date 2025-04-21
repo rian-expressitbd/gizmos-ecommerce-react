@@ -75,20 +75,19 @@ const products = [
   },
 ];
 
-
 export default function FeaturedGrid() {
   return (
-    <div className="mx-auto w-[80%] py-8 mb-[50px]">
+    <div className="mx-auto w-[90%] py-8 mb-[50px]">
       <h2 className="text-2xl font-bold mb-6">FEATURED PRODUCTS</h2>
-      <div className="grid grid-cols-6 grid-rows-2 gap-6">
+      <div className="grid grid-cols-1 xl:grid-cols-6 xl:grid-rows-2 gap-y-[0.5rem] gap-x-[0.5rem]">
         {/* Map through products and apply special styling for the 3rd item */}
         {products.map((product, index) => (
           <div
             key={product.id}
             className={
               index === 2
-                ? "col-span-2 row-span-2 h-full" // 3rd item spans 2 columns and 2 rows
-                : "h-[400px]" // Other items have a fixed height
+                ? "xl:col-span-2 xl:row-span-2 h-full" // 3rd item spans 2 columns and 2 rows
+                : "h-full" // Other items have a fixed height
             }
           >
             <ProductCard product={product} />

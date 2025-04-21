@@ -5,8 +5,8 @@ import { MdOutlineLocalShipping } from "react-icons/md";
 
 export default function Header() {
   return (
-    <div className="bg-[#F3F6FB] p-3 text-gray-400">
-      <div className="w-[80%] mx-auto flex justify-between items-center">
+    <div className="bg-[#F3F6FB] p-3 text-gray-400 hidden lg:block">
+      <div className="w-[90%] mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <CiCreditCard1 />
           <p className="text-sm ml-2">Welcome to Worldwide Gizmos Store</p>

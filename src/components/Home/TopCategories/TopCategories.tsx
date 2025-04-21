@@ -63,7 +63,7 @@ export default function TopCategories() {
   ];
 
   return (
-    <div className="mx-auto w-[80%]">
+    <div className="mx-auto w-[90%]">
       <h2 className="text-2xl font-bold">Top Categories</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-5 gap-14">
         {categories.map((category) => (

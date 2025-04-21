@@ -112,7 +112,7 @@ export default function Blogs() {
 
   return (
     <div className="bg-white py-12">
-      <div className="w-[90%] xl:w-[80%] mx-auto">
+      <div className="w-[90%] xl:w-[90%] mx-auto">
         <h2 className="text-3xl font-bold mb-10 text-gray-800">
           Latest Blog Posts
         </h2>

@@ -77,7 +77,7 @@ export default function Featured() {
   ];
 
   return (
-    <div className="w-[80%] mx-auto mb-[50px]">
+    <div className="w-[90%] mx-auto mb-[50px]">
       <h2 className="text-2xl font-semibold mb-5">Featured Products:</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-y-10 gap-x-10">
         {products.map((product) => (

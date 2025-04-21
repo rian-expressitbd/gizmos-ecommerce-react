@@ -14,17 +14,17 @@ export default function Navbar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
     <div>
-      <div className="w-[80%] mx-auto mt-[30px] mb-[30px] z-50">
-        <div className="flex items-center">
+      <div className="w-[90%] mx-auto mt-[30px] mb-[30px] z-50">
+        <div className="flex justify-between items-center">
           <div className="logo flex gap-[50px] items-center">
-          <h3 className="font-bold text-4xl">
-          Gizmos<span className="text-orange-500">.</span>
-        </h3>
-            
+            <h3 className="font-bold text-4xl">
+              Gizmos<span className="text-orange-500">.</span>
+            </h3>
+
             <GiHamburgerMenu
               size={24}
               onClick={() => setSidebarOpen(true)}
-              className="cursor-pointer"
+              className="cursor-pointer hidden lg:block"
             />
             {sidebarOpen && (
               <div
@@ -129,7 +129,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <div className="search mx-auto border-[0.5px] p-3 w-[600px] h-[50px]  rounded-[5px]">
+          <div className="search mx-auto border-[0.5px] p-3 w-[600px] h-[50px]  rounded-[5px] hidden lg:block">
             <div className="flex  items-center">
               <div className="flex gap-[30px] items-center justify-center">
                 <Dropdown>
@@ -155,11 +155,16 @@ export default function Navbar() {
               />
             </div>
           </div>
-          <div className="icons flex items-center gap-[10px] justify-end">
+          <div className="icons ml-[9px] flex items-center gap-[2px] lg:gap-[10px] justify-end  ">
             <TbArrowsDoubleNeSw size={24} />
             <FaRegUser size={24} className="ml-5" />
-            <FaRegHeart size={24} className="ml-5" />
+            <FaRegHeart size={24} className="ml-5 hidden lg:block" />
             <BsCart2 size={24} className="ml-5" />
+            <GiHamburgerMenu
+              size={24}
+              onClick={() => setSidebarOpen(true)}
+              className="cursor-pointer lg:hidden block ml-[2px]"
+            />
           </div>
         </div>
       </div>

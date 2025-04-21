@@ -40,11 +40,12 @@ export default function Slider() {
   };
 
   return (
-    <div className="bg-[#F3F6FB] h-[395.83px] relative mb-[50px]">
+    <div className="bg-[#F3F6FB] relative mb-12 w-full">
+      {/* Navigation Buttons */}
       <Button
         onClick={prevSlide}
         title="prev-btn"
-        className="absolute left-0 top-1/2 -translate-y-1/2 bg-transparent text-black px-4 py-2 rounded-md transition z-10"
+        className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-black p-2 rounded-full shadow-md z-10"
       >
         <FaChevronLeft />
       </Button>
@@ -52,12 +53,12 @@ export default function Slider() {
       <Button
         onClick={nextSlide}
         title="next-btn"
-        className="absolute right-0 top-1/2 -translate-y-1/2 bg-transparent text-black px-4 py-2 rounded-md transition z-10"
+        className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-black p-2 rounded-full shadow-md z-10"
       >
         <FaChevronRight />
       </Button>
-      
-      <div className="mx-auto w-[80%] h-full relative">
+
+      <div className="container mx-auto px-4 py-6">
         <AnimatePresence mode="wait">
           <motion.div
             key={current}
@@ -65,14 +66,14 @@ export default function Slider() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
-            className="flex flex-col md:flex-row items-center gap-10 h-full"
+            className="flex flex-col-reverse md:flex-row items-center gap-8 md:gap-12"
           >
-            {/* Text Content - Left Side */}
-            <div className="md:w-1/2 w-full space-y-6">
+            {/* Text Content */}
+            <div className="w-full md:w-1/2 space-y-4 text-center md:text-left">
               <motion.h2
                 initial={{ y: 20 }}
                 animate={{ y: 0 }}
-                className="text-4xl font-bold text-gray-900"
+                className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900"
               >
                 {slides[current].title}
               </motion.h2>
@@ -81,7 +82,7 @@ export default function Slider() {
                 initial={{ y: 20 }}
                 animate={{ y: 0 }}
                 transition={{ delay: 0.1 }}
-                className="text-lg text-gray-600"
+                className=" sm:text-lg  text-gray-600"
               >
                 {slides[current].tagline}
               </motion.p>
@@ -91,19 +92,21 @@ export default function Slider() {
                   initial={{ y: 20 }}
                   animate={{ y: 0 }}
                   transition={{ delay: 0.2 }}
-                  className="mt-8"
+                  className="mt-4"
                 >
                   {slides[current].description && (
-                    <p className="text-gray-600">
+                    <p className=" text-sm  text-gray-600">
                       {slides[current].description}
                     </p>
                   )}
                   {slides[current].action && (
                     <Button
                       title="action-btn"
-                      className="mt-4 bg-[#2453D4] flex justify-between gap-3 items-center text-white px-6 py-2 rounded-md hover:bg-gray-800 transition"
+                      className="mt-4 bg-[#2453D4] flex mx-auto md:mx-0 justify-center md:justify-start items-center gap-2 text-white px-5 py-2 rounded hover:bg-blue-900 transition"
                     >
-                      <p className="text-md">{slides[current].action}</p>
+                      <span className="text-sm sm:text-base">
+                        {slides[current].action}
+                      </span>
                       <FaChevronRight />
                     </Button>
                   )}
@@ -111,17 +114,17 @@ export default function Slider() {
               )}
             </div>
 
-            {/* Image with vertical slide animation */}
+            {/* Image */}
             <motion.div
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut" }}
-              className="md:w-1/2 w-full z-10"
+              className="w-full md:w-1/2"
             >
               <img
                 src={slides[current].image}
                 alt={slides[current].title}
-                className="rounded-lg object-cover w-[950px] h-[395.83px] z-10"
+                className="rounded-lg w-full h-auto max-h-[400px] object-cover"
               />
             </motion.div>
           </motion.div>
