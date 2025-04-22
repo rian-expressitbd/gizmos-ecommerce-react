@@ -4,16 +4,22 @@ import { useState } from "react";
 import { BsInfoSquare } from "react-icons/bs";
 import { FaChevronDown, FaChevronUp, FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
+import ImagesSlider from "./ImagesSlider";
 
 export default function SingleProduct() {
+  const [image,setImage]=useState("featured7.jpg");
   const [count, setCount] = useState(0);
   return (
-    <div className=" mx-auto mt-[50px] mb-[50px] flex flex-col xl:flex-row gap-4">
+    <div className=" mx-auto mt-[50px] mb-[50px] flex  flex-col xl:flex-row gap-32">
+      <div className="flex flex-col gap-4">
       <Image
-        src="/featured7.jpg"
+        src={`/${image}`}
         alt="monitor"
         className="border-gray-300 border-[0.5px] w-full  xl:w-[670px] "
       />
+      <ImagesSlider setImage={setImage}/>
+      </div>
+    
       <div className="w-full lg:w-[670px] ">
         <h1 className="text-lg lg:text-5xl leading-[1.5] font-semibold">
           4K Smart Monitor Vantablack Expo GPS-8377366J
