@@ -5,6 +5,7 @@ import NavbarLower from "@/components/Home/Navbar/NavbarLower";
 import Teams from "./Teams";
 import Video from "./Video";
 import MultiVendor from "./MultiVendor";
+import Blogs from "@/components/Home/Blogs/Blogs";
 
 export default function About() {
   return (
@@ -86,6 +87,10 @@ export default function About() {
       <Teams />
       <Video />
       <MultiVendor />
+      <div className="bg-[#F3F6FB]">
+        <Blogs />
+      </div>
+
       <Footer />
     </>
   );
