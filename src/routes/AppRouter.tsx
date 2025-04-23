@@ -4,6 +4,7 @@ import ContactUs from "@/pages/contact/ContactUs";
 import FAQ from "@/pages/faq/FAQ";
 import GetInTouch from "@/pages/GetInTouch/GetInTouch";
 import NotFoundPage from "@/pages/NotFoundPage";
+import PricingPlans from "@/pages/pricing-plans/PricingPlans";
 import SingleProductDetails from "@/pages/shop/SingleProductDetails/SingleProductDetails";
 import StoreLocator from "@/pages/StoreLocator/StoreLocator";
 import TermsAndConditions from "@/pages/terms_conditions/TermsAndConditions";
@@ -22,7 +23,7 @@ const AppRouter: React.FC = () => {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/get-in-touch" element={<GetInTouch />} />
         <Route path="/store-locator" element={<StoreLocator />} />
-        <Route path="/pricing" element={<StoreLocator />} />
+        <Route path="/pricing" element={<PricingPlans />} />
 
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
