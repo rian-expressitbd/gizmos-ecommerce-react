@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function FooterMiddle() {
   return (
     <div className="py-14">
@@ -12,7 +14,9 @@ export default function FooterMiddle() {
               <li>Delivery Terms</li>
               <li>Payment & Pricing</li>
               <li>Terms Of Use</li>
-              <li>Privacy Policy</li>
+              <Link className="mt-5 h-[20px] flex" to="/privacy-policy">
+                Privacy Policy
+              </Link>
             </ul>
           </div>
 
