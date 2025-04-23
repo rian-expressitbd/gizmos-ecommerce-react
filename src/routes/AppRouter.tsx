@@ -2,8 +2,10 @@ import App from "@/App";
 import About from "@/pages/about/About";
 import ContactUs from "@/pages/contact/ContactUs";
 import FAQ from "@/pages/faq/FAQ";
+import GetInTouch from "@/pages/GetInTouch/GetInTouch";
 import NotFoundPage from "@/pages/NotFoundPage";
 import SingleProductDetails from "@/pages/shop/SingleProductDetails/SingleProductDetails";
+import StoreLocator from "@/pages/StoreLocator/StoreLocator";
 import TermsAndConditions from "@/pages/terms_conditions/TermsAndConditions";
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -18,6 +20,9 @@ const AppRouter: React.FC = () => {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/terms" element={<TermsAndConditions />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/get-in-touch" element={<GetInTouch />} />
+        <Route path="/store-locator" element={<StoreLocator />} />
+        <Route path="/pricing" element={<StoreLocator />} />
 
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
