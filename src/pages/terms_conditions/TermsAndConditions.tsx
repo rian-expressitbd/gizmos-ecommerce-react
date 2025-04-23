@@ -6,6 +6,7 @@ import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { BiSolidJoystick } from "react-icons/bi";
 import { FaHeadphones, FaTv } from "react-icons/fa";
 import { TbDeviceWatch } from "react-icons/tb";
+import ContactForm from "../faq/ContactForm";
 
 export default function TermsAndConditions() {
   return (
@@ -132,8 +133,31 @@ export default function TermsAndConditions() {
             </ul>
           </div>
         </div>
+        <hr className="border-gray-300" />
+        <div className="flex flex-col lg:flex-row items-start justify-between mt-[40px] mb-[40px]">
+          <div className="w-1/3">
+            <h3 className="text-2xl font-semibold">Intellectual Property</h3>
+          </div>
+
+          <div className="w-2/3">
+            <ul className="list-disc pl-5 text-sm text-[#677AB0]">
+              <p className="text-sm text-[#677AB0]">
+                Vestibulum convallis dui vel neque feugiat, vel ultricies mauris
+                faucibus. Lobortis purus eu, interdum urna. Donec dapibus ipsum
+                efficitur iaculis. Suspendisse accumsan erat id sapien tempor
+                ultricies. Fusce lacinia augue vitae nibh gravida rho. Aenean eg
+                massa ipsum. Vivamus nisi massa, euismod sed tristique ac,
+                consectetur tincidunt tellus.
+              </p>
+            </ul>
+          </div>
+        </div>
+        <hr className="border-gray-300" />
+        <ContactForm />
       </div>
-      <Footer />
+      <div className="mt-[50px]">
+        <Footer />
+      </div>
     </>
   );
 }

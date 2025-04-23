@@ -1,5 +1,6 @@
 import App from "@/App";
 import About from "@/pages/about/About";
+import ContactUs from "@/pages/contact/ContactUs";
 import FAQ from "@/pages/faq/FAQ";
 import NotFoundPage from "@/pages/NotFoundPage";
 import SingleProductDetails from "@/pages/shop/SingleProductDetails/SingleProductDetails";
@@ -16,6 +17,7 @@ const AppRouter: React.FC = () => {
         <Route path="/about" element={<About />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/terms" element={<TermsAndConditions />} />
+        <Route path="/contact" element={<ContactUs />} />
 
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
