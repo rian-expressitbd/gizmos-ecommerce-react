@@ -1,4 +1,5 @@
 import { Breadcrumb } from "@/components/ui/breadcrumb";
+import { Button } from "@/components/ui/button";
 import CommonLayout from "@/layouts/common-layout";
 import React, { useState } from "react";
 
@@ -72,18 +73,18 @@ const CartPage: React.FC = () => {
           <table className="min-w-full table-auto border-collapse">
             <thead>
               <tr className="text-left border-b">
-                <th className="p-2"></th>
-                <th className="p-2">Product</th>
-                <th className="p-2">Price</th>
-                <th className="p-2">Quantity</th>
-                <th className="p-2">Subtotal</th>
+                <th className="p-6"></th>
+                <th className="p-6">Product</th>
+                <th className="p-6">Price</th>
+                <th className="p-6">Quantity</th>
+                <th className="p-6">Subtotal</th>
               </tr>
             </thead>
             <tbody>
               {cart.map((item) => (
                 <tr key={item.id} className="border-b hover:bg-gray-50">
-                  <td className="p-2 text-red-500 cursor-pointer">✕</td>
-                  <td className="p-2 flex items-center gap-4">
+                  <td className="p-6 text-red-500 cursor-pointer">✕</td>
+                  <td className="p-6 flex items-center gap-4">
                     <img
                       src={item.image}
                       alt={item.title}
@@ -91,8 +92,8 @@ const CartPage: React.FC = () => {
                     />
                     {item.title}
                   </td>
-                  <td className="p-2">${item.price}</td>
-                  <td className="p-2">
+                  <td className="p-6">${item.price}</td>
+                  <td className="p-6">
                     <div className="flex items-center gap-2">
                       <button
                         onClick={() => handleQuantityChange(item.id, -1)}
@@ -109,7 +110,7 @@ const CartPage: React.FC = () => {
                       </button>
                     </div>
                   </td>
-                  <td className="p-2">${item.price * item.quantity}</td>
+                  <td className="p-6">${item.price * item.quantity}</td>
                 </tr>
               ))}
             </tbody>
@@ -125,13 +126,19 @@ const CartPage: React.FC = () => {
               onChange={(e) => setCoupon(e.target.value)}
               className="border px-4 py-2 rounded w-full"
             />
-            <button className="bg-blue-600 text-white px-4 py-2 w-full rounded hover:bg-blue-700">
+            <Button
+              title="coupon"
+              className="bg-blue-600 text-white px-4 py-2 w-full rounded hover:bg-blue-700"
+            >
               Apply Coupon
-            </button>
+            </Button>
           </div>
-          <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+          <Button
+            title="update_cart"
+            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+          >
             Update Cart
-          </button>
+          </Button>
         </div>
 
         <div className="mt-10 text-right">

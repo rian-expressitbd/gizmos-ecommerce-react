@@ -159,7 +159,10 @@ export default function Navbar() {
           <div className="icons ml-[9px] flex items-center gap-[2px] lg:gap-[10px] justify-end  ">
             <TbArrowsDoubleNeSw size={24} />
             <FaRegUser size={24} className="ml-5" />
-            <FaRegHeart size={24} className="ml-5 hidden lg:block" />
+            <Link to="/wishlist">
+              <FaRegHeart size={24} className="ml-5 hidden lg:block" />
+            </Link>
+
             <Link to="/cart">
               <BsCart2 size={24} className="ml-5" />
             </Link>

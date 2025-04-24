@@ -12,6 +12,7 @@ import SingleProductDetailsOne from "@/pages/shop/SingleProductDetails/SinglePro
 import SingleProductDetailsTwo from "@/pages/shop/SingleProductDetails/SingleProductDetailsTwo";
 import StoreLocator from "@/pages/StoreLocator/StoreLocator";
 import TermsAndConditions from "@/pages/terms_conditions/TermsAndConditions";
+import Wishlist from "@/pages/Wishlist/Wishlist";
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
@@ -32,6 +33,7 @@ const AppRouter: React.FC = () => {
         <Route path="/pricing" element={<PricingPlans />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/cart" element={<CartPage />} />
+        <Route path="/wishlist" element={<Wishlist />} />
 
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
