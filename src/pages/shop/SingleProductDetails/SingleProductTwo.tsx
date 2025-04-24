@@ -59,25 +59,29 @@ export default function SingleProductTwo() {
         </div>
         <div className="flex items-center gap-9 mt-5">
           <h4 className="text-md font-semibold">Colors: </h4>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 ml-[1.5rem]">
             <div
               tabIndex={0}
-              className="rounded-full px-4 p-3 cursor-pointer focus:border-blue-700 focus:border-[2px]"
+              className="relative rounded-full border-[2px]  border-gray-300  p-5 cursor-pointer focus:border-blue-700 focus:border-[2px] w-[18px] h-[18px]"
             >
-              <div className="bg-blue-600 border-white border-[4px] rounded-full"></div>
-            </div>
-            <div
-              tabIndex={0}
-              className="rounded-full px-4 p-3 cursor-pointer focus:border-blue-700 focus:border-[2px]"
-            >
-              <div className="bg-orange-600 border-white border-[4px] rounded-full"></div>
+              <div className="absolute white left-[1px] top-[4px] rounded-full bg-white border-white px-4 p-3 cursor-pointer focus:border-blue-700 focus:border-[2px] w-[26px] h-[26px]">
+                <div className="absolute top-[3px] left-[6px] border-[1px] rounded-full w-[26px] h-[26px] bg-red-600 purple"></div>
+              </div>
             </div>
             <div
               tabIndex={0}
               className="relative rounded-full border-[2px]  border-gray-300  p-5 cursor-pointer focus:border-blue-700 focus:border-[2px] w-[18px] h-[18px]"
             >
-              <div className="absolute white left-[1px] top-[0px] rounded-full bg-white border-white px-4 p-3 cursor-pointer focus:border-blue-700 focus:border-[2px] w-[20px] h-[20px]">
-                <div className="absolute top-[3px] left-[6px] border-[1px] rounded-full w-[18px] h-[18px] bg-purple-600 purple"></div>
+              <div className="absolute white left-[1px] top-[4px] rounded-full bg-white border-white px-4 p-3 cursor-pointer focus:border-blue-700 focus:border-[2px] w-[26px] h-[26px]">
+                <div className="absolute top-[3px] left-[6px] border-[1px] rounded-full w-[26px] h-[26px] bg-blue-600 purple"></div>
+              </div>
+            </div>
+            <div
+              tabIndex={0}
+              className="relative rounded-full border-[2px]  border-gray-300  p-5 cursor-pointer focus:border-blue-700 focus:border-[2px] w-[18px] h-[18px]"
+            >
+              <div className="absolute white left-[1px] top-[4px] rounded-full bg-white border-white px-4 p-3 cursor-pointer focus:border-blue-700 focus:border-[2px] w-[26px] h-[26px]">
+                <div className="absolute top-[3px] left-[6px] border-[1px] rounded-full w-[26px] h-[26px] bg-purple-600 purple"></div>
               </div>
             </div>
           </div>

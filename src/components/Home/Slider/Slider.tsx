@@ -58,7 +58,7 @@ export default function Slider() {
         <FaChevronRight />
       </Button>
 
-      <div className="w-[90%] mx-auto px-4 py-6">
+      <div className="w-[90%] mx-auto px-4 py-6 h-[331px]">
         <AnimatePresence mode="wait">
           <motion.div
             key={current}
@@ -124,7 +124,7 @@ export default function Slider() {
               <img
                 src={slides[current].image}
                 alt={slides[current].title}
-                className="rounded-lg w-full h-auto max-h-[400px] object-cover"
+                className="rounded-lg w-full h-[253px]  object-cover"
               />
             </motion.div>
           </motion.div>

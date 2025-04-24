@@ -9,6 +9,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { TbArrowsDoubleNeSw } from "react-icons/tb";
 import { BsCart2 } from "react-icons/bs";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -159,7 +160,9 @@ export default function Navbar() {
             <TbArrowsDoubleNeSw size={24} />
             <FaRegUser size={24} className="ml-5" />
             <FaRegHeart size={24} className="ml-5 hidden lg:block" />
-            <BsCart2 size={24} className="ml-5" />
+            <Link to="/cart">
+              <BsCart2 size={24} className="ml-5" />
+            </Link>
             <GiHamburgerMenu
               size={24}
               onClick={() => setSidebarOpen(true)}
