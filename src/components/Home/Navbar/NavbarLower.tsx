@@ -6,7 +6,7 @@ export default function NavbarLower() {
     <div>
       <div className="bg-[#2453D4] text-white h-[60px] hidden md:block">
         <div className="w-[90%] mx-auto flex justify-between items-center h-[100%] whitespace-nowrap">
-          <div >
+          <div>
             <ul className="flex items-center gap-10 h-[60px]">
               <Link to="/">Home</Link>
               <div className="relative group whitespace-nowrap h-[60px]">
@@ -35,6 +35,9 @@ export default function NavbarLower() {
                   </Link>
                   <Link to="/pricing" className="py-1">
                     Pricing Plans
+                  </Link>
+                  <Link to="/best-sellers" className="py-1">
+                    Best Sellers
                   </Link>
                 </div>
               </div>

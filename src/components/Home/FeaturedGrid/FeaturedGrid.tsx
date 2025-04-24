@@ -90,7 +90,7 @@ export default function FeaturedGrid() {
                 : "h-full" // Other items have a fixed height
             }
           >
-            <ProductCard product={product} />
+            <ProductCard index={index} product={product} />
           </div>
         ))}
       </div>

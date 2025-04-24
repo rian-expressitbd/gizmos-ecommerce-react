@@ -1,5 +1,6 @@
 import App from "@/App";
 import About from "@/pages/about/About";
+import BestSellers from "@/pages/BestSellers/BestSellers";
 import CartPage from "@/pages/cart/Cart";
 import Checkout from "@/pages/checkout/Checkout";
 import ContactUs from "@/pages/contact/ContactUs";
@@ -38,6 +39,7 @@ const AppRouter: React.FC = () => {
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/shop" element={<ShopWithCategory />} />
+        <Route path="/best-sellers" element={<BestSellers />} />
 
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
