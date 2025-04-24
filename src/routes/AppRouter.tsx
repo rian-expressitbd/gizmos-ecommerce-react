@@ -1,6 +1,7 @@
 import App from "@/App";
 import About from "@/pages/about/About";
 import CartPage from "@/pages/cart/Cart";
+import Checkout from "@/pages/checkout/Checkout";
 import ContactUs from "@/pages/contact/ContactUs";
 import FAQ from "@/pages/faq/FAQ";
 import GetInTouch from "@/pages/GetInTouch/GetInTouch";
@@ -10,6 +11,7 @@ import PrivacyPolicy from "@/pages/PrivacyPolicy/PrivacyPolicy";
 import SingleProductDetails from "@/pages/shop/SingleProductDetails/SingleProductDetails";
 import SingleProductDetailsOne from "@/pages/shop/SingleProductDetails/SingleProductDetailsOne";
 import SingleProductDetailsTwo from "@/pages/shop/SingleProductDetails/SingleProductDetailsTwo";
+import ShopWithCategory from "@/pages/ShopWithCategory/ShopWithCategory";
 import StoreLocator from "@/pages/StoreLocator/StoreLocator";
 import TermsAndConditions from "@/pages/terms_conditions/TermsAndConditions";
 import Wishlist from "@/pages/Wishlist/Wishlist";
@@ -34,6 +36,8 @@ const AppRouter: React.FC = () => {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/wishlist" element={<Wishlist />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/shop" element={<ShopWithCategory />} />
 
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

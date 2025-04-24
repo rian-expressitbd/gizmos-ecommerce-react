@@ -4,7 +4,7 @@ import {
   DropdownTrigger,
 } from "@/components/ui/dropdown";
 import { Separator } from "@/components/ui/separator";
-import { FaRegHeart, FaRegUser } from "react-icons/fa";
+import { FaChevronRight, FaRegHeart, FaRegUser } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { TbArrowsDoubleNeSw } from "react-icons/tb";
 import { BsCart2 } from "react-icons/bs";
@@ -49,14 +49,23 @@ export default function Navbar() {
                 <li>Premium Tech</li>
                 <li>New Arrivals</li>
                 <li className="flex justify-between items-center cursor-pointer">
-                  Home & Kitchen <span>›</span>
+                  Home & Kitchen{" "}
+                  <span>
+                    <FaChevronRight size={18} />
+                  </span>
                 </li>
                 <li className="flex justify-between items-center cursor-pointer">
-                  Technology <span>›</span>
+                  Technology{" "}
+                  <span>
+                    <FaChevronRight size={18} />
+                  </span>
                 </li>
                 <li className="group relative cursor-pointer">
                   <div className="flex justify-between items-center">
-                    Innovative Appliances <span className="ml-2">›</span>
+                    Innovative Appliances{" "}
+                    <span className="ml-2">
+                      <FaChevronRight size={18} />
+                    </span>
                   </div>
 
                   {/* Side Wide Dropdown */}
