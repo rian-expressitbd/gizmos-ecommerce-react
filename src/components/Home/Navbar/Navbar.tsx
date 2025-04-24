@@ -157,7 +157,7 @@ export default function Navbar() {
                 className="bg-gray-300 h-[20px] mx-3"
               />
               <input
-                className="border-0  mx-auto h-[20px]"
+                className="border-0 h-[20px]"
                 type="text"
                 name=""
                 id=""
