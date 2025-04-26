@@ -1,4 +1,4 @@
-import { ProductCard } from "@/components/ui/cards/product-card";
+import { ProductCardForGrid } from "@/components/ui/cards/product-card-for-grid";
 import { Link } from "react-router-dom";
 
 export default function Featured() {
@@ -84,7 +84,7 @@ export default function Featured() {
         {products.map((product, index) => (
           <Link to={`/product/${product.id}`}>
             {" "}
-            <ProductCard index={index} product={product} />
+            <ProductCardForGrid index={index} product={product} />
           </Link>
         ))}
       </div>

@@ -79,7 +79,7 @@ export default function FeaturedGrid() {
   return (
     <div className="mx-auto w-[90%] py-8 mb-[50px]">
       <h2 className="text-2xl font-bold mb-6">FEATURED PRODUCTS</h2>
-      <div className="grid grid-cols-1 xl:grid-cols-6 xl:grid-rows-2 gap-y-[0.5rem] gap-x-[0.5rem]">
+      <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-6 xl:grid-rows-2 gap-y-[0.5rem] gap-x-[0.5rem]">
         {/* Map through products and apply special styling for the 3rd item */}
         {products.map((product, index) => (
           <div

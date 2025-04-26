@@ -63,41 +63,41 @@ export default function CountDown() {
   };
 
   return (
-    <div className="flex justify-center items-center gap-6 md:gap-8 mt-[40px] mb-[40px]">
+    <div className="grid grid-cols-2 xl:grid-cols-4 justify-center items-center gap-2  md:md-gap-2 mt-[40px] mb-[40px]">
       {/* Days */}
-      <div className="flex flex-col items-center bg-[#F3F6FB] rounded-[10px] p-5">
-        <span className="text-sm text-gray-600 font-medium uppercase tracking-wider">
+      <div className="flex flex-col items-center bg-[#F3F6FB] rounded-[10px] p-2 md:p-5 w-[72.4px] place-self-center lg:w-[100%]">
+        <span className="text-xs lg:text-sm text-gray-600 font-medium uppercase tracking-wider">
           Days
         </span>
-        <span className="text-2xl md:text-3xl font-bold">{timeLeft.days}</span>
+        <span className="text-xl md:text-3xl font-bold">{timeLeft.days}</span>
       </div>
 
       {/* Hours */}
-      <div className="flex flex-col items-center bg-[#F3F6FB] rounded-[10px] p-5">
-        <span className="text-sm text-gray-600 font-medium uppercase tracking-wider">
+      <div className="flex flex-col items-center bg-[#F3F6FB] rounded-[10px] p-2 md:p-5 w-[72.4px] place-self-center lg:w-[100%]">
+        <span className="text-xs lg:text-sm text-gray-600 font-medium uppercase tracking-wider">
           Hours
         </span>
-        <span className="text-2xl md:text-3xl font-bold">
+        <span className="text-xl md:text-3xl font-bold">
           {formatNumber(timeLeft.hours)}
         </span>
       </div>
 
       {/* Minutes */}
-      <div className="flex flex-col items-center bg-[#F3F6FB] rounded-[10px] p-5">
-        <span className="text-sm text-gray-600 font-medium uppercase tracking-wider">
+      <div className="flex flex-col items-center bg-[#F3F6FB] rounded-[10px] p-2 md:p-5 w-[72.4px] place-self-center lg:w-[100%]">
+        <span className="text-xs lg:text-sm text-gray-600 font-medium uppercase tracking-wider">
           Minutes
         </span>
-        <span className="text-2xl md:text-3xl font-bold">
+        <span className="text-xl md:text-3xl font-bold">
           {formatNumber(timeLeft.minutes)}
         </span>
       </div>
 
       {/* Seconds */}
-      <div className="flex flex-col items-center bg-[#F3F6FB] rounded-[10px] p-5">
-        <span className="text-sm text-gray-600 font-medium uppercase tracking-wider">
+      <div className="flex flex-col items-center bg-[#F3F6FB] rounded-[10px] p-2 md:p-5 w-[72.4px] place-self-center lg:w-[100%]">
+        <span className="text-xs lg:text-sm text-gray-600 font-medium uppercase tracking-wider">
           Seconds
         </span>
-        <span className="text-2xl md:text-3xl font-bold">
+        <span className="text-xl md:text-3xl font-bold">
           {formatNumber(timeLeft.seconds)}
         </span>
       </div>

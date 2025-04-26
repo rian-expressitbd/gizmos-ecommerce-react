@@ -124,7 +124,7 @@ export default function Slider() {
               <img
                 src={slides[current].image}
                 alt={slides[current].title}
-                className="rounded-lg w-full h-[386px] object-contain  md:object-cover"
+                className="rounded-lg w-full h-[287px] object-contain  md:object-cover"
               />
             </motion.div>
           </motion.div>
