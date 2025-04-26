@@ -1,6 +1,7 @@
 import App from "@/App";
 import About from "@/pages/about/About";
 import BestSellers from "@/pages/BestSellers/BestSellers";
+import BlogDetails from "@/pages/BlogDetails/BlogDetails";
 import Blogs from "@/pages/blogs/Blogs";
 import CartPage from "@/pages/cart/Cart";
 import Checkout from "@/pages/checkout/Checkout";
@@ -42,6 +43,7 @@ const AppRouter: React.FC = () => {
         <Route path="/shop" element={<ShopWithCategory />} />
         <Route path="/best-sellers" element={<BestSellers />} />
         <Route path="/blog" element={<Blogs />} />
+        <Route path="/blog-details" element={<BlogDetails />} />
 
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
