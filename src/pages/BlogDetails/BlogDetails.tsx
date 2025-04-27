@@ -6,9 +6,16 @@ import Newsletter from "../blogs/Newsletter";
 import FollowUs from "../blogs/FollowUs";
 import Tags from "../blogs/Tags";
 import RelatedPosts from "../blogs/RelatedPosts";
-import { FaMagnifyingGlass } from "react-icons/fa6";
+import { FaMagnifyingGlass, FaX } from "react-icons/fa6";
 import { InputField } from "@/components/ui/form/input-field";
-import { FaQuoteLeft } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaPinterest,
+  FaQuoteLeft,
+  FaReddit,
+} from "react-icons/fa";
 import Comment from "./Comment";
 import LeaveReply from "./LeaveReply";
 
@@ -105,14 +112,24 @@ export default function BlogDetails() {
               i sapien. Faucibus in ornare quam viverra orci sagittis.
             </p>
           </div>
-          <div className="text-sm text-gray-500 mb-4">
-            <a href="#" className="hover:underline">
-              ELECTRONICS
-            </a>{" "}
-            /{" "}
-            <a href="#" className="hover:underline">
-              GADGET
-            </a>
+          <div className="text-sm font-semibold text-gray-500 mb-[40px] mt-[40px] flex justify-between items-center">
+            <div>
+              <a href="#" className="hover:underline">
+                ELECTRONICS
+              </a>{" "}
+              /{" "}
+              <a href="#" className="hover:underline">
+                GADGET
+              </a>
+            </div>
+            <div className="flex items-center gap-2">
+              <FaFacebook size={15} />
+              <FaX size={15} />
+              <FaInstagram size={15} />
+              <FaPinterest size={15} />
+              <FaReddit size={15} />
+              <FaLinkedin size={15} />
+            </div>
           </div>
 
           <div className="bg-white shadow rounded-lg p-6 mb-10 flex items-center gap-4">

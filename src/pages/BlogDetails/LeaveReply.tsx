@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 export default function LeaveReply() {
   return (
     <div className="mt-10 mb-5">
-      <h3 className="text-2xl font-bold mb-6">Leave a Reply</h3>
+      <h3 className="text-4xl font-bold mb-6">Leave a Reply</h3>
       <p className="text-sm text-gray-500 mb-6">
         Your email address will not be published. Required fields are marked *
       </p>
