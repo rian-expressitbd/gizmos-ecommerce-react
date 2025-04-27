@@ -14,6 +14,7 @@ import PrivacyPolicy from "@/pages/PrivacyPolicy/PrivacyPolicy";
 import AccordionShop from "@/pages/shop/AllShopPages/AccordionShop";
 import GrouppedProduct from "@/pages/shop/AllShopPages/GrouppedShop";
 import NewProduct from "@/pages/shop/AllShopPages/NewProduct";
+import SaleProduct from "@/pages/shop/AllShopPages/SaleProduct";
 import VariableProductA from "@/pages/shop/AllShopPages/VariableShopA";
 import VariableProductB from "@/pages/shop/AllShopPages/VariableShopB";
 import SingleProductDetails from "@/pages/shop/SingleProductDetails/SingleProductDetails";
@@ -53,6 +54,7 @@ const AppRouter: React.FC = () => {
         <Route path="/shop/variable-b" element={<VariableProductB />} />
         <Route path="/shop/groupped" element={<GrouppedProduct />} />
         <Route path="/shop/new" element={<NewProduct />} />
+        <Route path="/shop/sale" element={<SaleProduct />} />
         {/* All shop pages  */}
 
         <Route path="/best-sellers" element={<BestSellers />} />
