@@ -1,50 +1,132 @@
 import { Accordion } from "@/components/ui/accordion";
-
+import { Image } from "@/components/ui/image";
+import { FaRegHeart } from "react-icons/fa";
+import { FiShoppingCart } from "react-icons/fi";
+import { TbArrowsDoubleNeSw } from "react-icons/tb";
 
 export const SingleProductAccordion = () => {
-    return (
-      <div className="w-[90%] mx-auto">
-        <h2 className="text-xl font-bold mb-4">Accessories</h2>
-        
-        <div className="space-y-4">
-          <Accordion trigger="Description">
-            <div className="space-y-4">
+  const products = [
+    {
+      id: "1",
+      name: "Fractal Design Tempered Glass S7 Computer Case",
+      price: "2790",
+      image: "/featured1.jpg",
+      category: "Device",
+      title: "Device",
+    },
+    {
+      id: "2",
+      name: "Multiuse USB Cable Phone/Tablet/Laptop",
+      price: "42",
+      image: "/featured2.jpg",
+      category: "Device",
+      title: "Device",
+    },
+    {
+      id: "3",
+      name: "Profeus Tablet Q Series QW-55814 Professional",
+      price: "550",
+      image: "/featured3.jpg",
+      category: "Device",
+      title: "Device",
+    },
+  ];
+
+  return (
+    <div className="w-[90%] mx-auto">
+      <div className="space-y-4">
+        <Accordion trigger="Accesories" defaultOpen={true}>
+          <div className="space-y-4 flex justify-between items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-6">
+              {products.map((product) => (
+                <div className="group border-[0.5px]  h-[300px] rounded-[10px] p-3 flex flex-col  relative overflow-hidden transition-all duration-300">
+                  {/* Header with category and action icons - fixed position */}
+                  <div className="flex justify-between z-10 bg-white">
+                    <p className="text-xs text-gray-400">{product.category}</p>
+                    <div className="flex flex-col gap-3">
+                      <FaRegHeart className="cursor-pointer hover:text-red-500 transition-colors" />
+                      <TbArrowsDoubleNeSw className="cursor-pointer hover:text-blue-500 transition-colors" />
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col flex-grow transition-transform duration-300 group-hover:-translate-y-10">
+                    {/* Product image */}
+
+                    <Image
+                      src={product.image}
+                      className="mx-auto w-full h-[200px] object-contain my-auto"
+                      alt={product.title}
+                    />
+
+                    <h1 className="text-lg mt-3">${product.price}</h1>
+                  </div>
+
+                  {/* Add to Cart button that slides up on hover */}
+                  <button
+                    className="absolute flex justify-between bottom-0 left-0 right-0 bg-[#2453D4] text-white py-3 
+                                  opacity-0 translate-y-full transition-all duration-300
+                                  group-hover:opacity-100 group-hover:translate-y-0
+                                  hover:bg-[#2453D4] text-sm p-3"
+                  >
+                    <p>Remove From Cart</p>
+                    <FiShoppingCart />
+                  </button>
+                </div>
+              ))}
+            </div>
+            <div className="bg-[#F3F6FB] p-6 h-[300px] flex flex-col justify-between">
+              {/* Top-aligned content */}
               <div>
-                <h3 className="font-medium">4K Smart Monitor</h3>
-                <p className="text-sm text-gray-600">VariableNet Expo GPS-587736ck</p>
-                <p className="font-bold mt-1">$1,150</p>
+                <h2 className="text-xl font-semibold">Your Current Cart</h2>
               </div>
-              <div>
-                <h3 className="font-medium">Multiusre USB Cable</h3>
-                <p className="text-sm text-gray-600">Phone/Tablet/Laptop</p>
-                <p className="font-bold mt-1">$42</p>
+
+              {/* Center-aligned content */}
+              <div className="flex flex-col items-center justify-center">
+                <p className="font-bold text-lg">1742$</p>
+                <p className="text-sm text-gray-600 mt-3">for 3 items(s)</p>
               </div>
-              <div>
-                <h3 className="font-medium">Profous Tablet Q Series</h3>
-                <p className="text-sm text-gray-600">QW-SS814 Professional</p>
-                <p className="font-bold mt-1">$550</p>
+
+              {/* Bottom-aligned content */}
+              <div className="flex justify-center">
+                <button className="bg-blue-600 text-white py-2 px-3 rounded hover:bg-gray-800 transition-colors">
+                  ADD TO CART
+                </button>
               </div>
             </div>
-          </Accordion>
-  
-          <Accordion trigger="Your Current Cart" defaultOpen={true}>
-            <div className="space-y-4">
-              <p className="font-bold text-lg">1742$</p>
-              <p className="text-sm text-gray-600">for 3 items(s)</p>
-              <button className="bg-black text-white py-2 px-3 rounded hover:bg-gray-800 transition-colors">
-                ADD TO CART
-              </button>
+          </div>
+        </Accordion>
+        <Accordion trigger="Description">
+          <div className="space-y-4">
+            <div>
+              <h3 className="font-medium">4K Smart Monitor</h3>
+              <p className="text-sm text-gray-600">
+                VariableNet Expo GPS-587736ck
+              </p>
+              <p className="font-bold mt-1">$1,150</p>
             </div>
-          </Accordion>
-  
-          <Accordion trigger="Specification">
-            <p className="text-gray-600">Product specifications would appear here</p>
-          </Accordion>
-  
-          <Accordion trigger="Reviews (0)">
-            <p className="text-gray-600">No reviews yet</p>
-          </Accordion>
-        </div>
+            <div>
+              <h3 className="font-medium">Multiusre USB Cable</h3>
+              <p className="text-sm text-gray-600">Phone/Tablet/Laptop</p>
+              <p className="font-bold mt-1">$42</p>
+            </div>
+            <div>
+              <h3 className="font-medium">Profous Tablet Q Series</h3>
+              <p className="text-sm text-gray-600">QW-SS814 Professional</p>
+              <p className="font-bold mt-1">$550</p>
+            </div>
+          </div>
+        </Accordion>
+
+        <Accordion trigger="Specification">
+          <p className="text-gray-600">
+            Product specifications would appear here
+          </p>
+        </Accordion>
+
+        <Accordion trigger="Reviews (0)">
+          <p className="text-gray-600">No reviews yet</p>
+        </Accordion>
       </div>
-    );
-  };
+    </div>
+  );
+};

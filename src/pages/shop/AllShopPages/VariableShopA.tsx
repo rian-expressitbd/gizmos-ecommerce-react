@@ -3,12 +3,12 @@ import Navbar from "@/components/Home/Navbar/Navbar";
 import NavbarLower from "@/components/Home/Navbar/NavbarLower";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import Footer from "@/components/Home/Footer/Footer";
-// import { SingleProductAccordion } from "./SingleProductAccordion";
-import RelatedProducts from "./RelatedProducts";
-import SingleProductOne from "./SingleProductOne";
-import ProductTabSystem from "../AllShopPages/SmallComponents/Tabs";
+import { SingleProductAccordion } from "../SingleProductDetails/SingleProductAccordion";
+import RelatedProducts from "../SingleProductDetails/RelatedProducts";
+import VariableProductDetailsOne from "../SingleProductDetails/VariableProductDetails";
 
-export default function SingleProductDetailsOne() {
+
+export default function VariableProductA() {
   return (
     <>
       {/* tasks */}
@@ -19,10 +19,9 @@ export default function SingleProductDetailsOne() {
       <NavbarLower />
       <div className="w-[90%] mx-auto mt-[30px]">
         <Breadcrumb />
-        <SingleProductOne />
+        <VariableProductDetailsOne />
       </div>
-      <ProductTabSystem />
-      {/* <SingleProductAccordion /> */}
+      <SingleProductAccordion />
       <RelatedProducts />
       <div className="mt-[30px] footer_div">
         <Footer />

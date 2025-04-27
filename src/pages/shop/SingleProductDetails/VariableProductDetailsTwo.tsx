@@ -5,13 +5,8 @@ import { BsInfoSquare } from "react-icons/bs";
 import { FaChevronDown, FaChevronUp, FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import ImagesSlider from "./ImagesSlider";
-// import {
-//   Dropdown,
-//   DropdownContent,
-//   DropdownTrigger,
-// } from "@/components/ui/dropdown";
 
-export default function SingleProductOne() {
+export default function VariableProductDetailsTwo() {
   const [image, setImage] = useState("featured7.jpg");
   const [count, setCount] = useState(0);
   return (
@@ -36,36 +31,61 @@ export default function SingleProductOne() {
           pertinax sensibus id, error epicurei mea et. Qui purto zril laoreet.
           Ex error omnium interpretaris pro.
         </p>
-        {/* <div className="flex items-center gap-9 mt-[30px]">
-          <h4 className="text-md font-semibold">Model:</h4>
+        <div className="flex items-center gap-9 mt-[30px]">
           <div>
-            <Dropdown className="border-[1px] border-gray-400 p-4 rounded-[10px]">
-              <DropdownTrigger>
-                <h3 className="text-sm font font-semibold">Choose An Option</h3>
-              </DropdownTrigger>
-              <DropdownContent className="p-3 w-full min-w-[100px] py-3">
-                <p className="text-sm font font-semibold">Choose An Option</p>
-                <li>Macbook</li>
-                <li className="mt-2">Iphone</li>
-              </DropdownContent>
-            </Dropdown>
+            <h4 className="text-md font-semibold">RAM Size:</h4>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <div
+              tabIndex={0}
+              className="border-gray-300 border-[0.5px] rounded-[10px] px-4 p-3 cursor-pointer focus:border-blue-700 focus:border-[2px]"
+            >
+              <h4 className="text-sm font-semibold">8 GB</h4>
+            </div>
+            <div
+              tabIndex={0}
+              className="border-gray-300 border-[0.5px] rounded-[10px] px-4 p-3 cursor-pointer focus:border-blue-700 focus:border-[2px]"
+            >
+              <h4 className="text-sm font-semibold">16 GB</h4>
+            </div>
+            <div
+              tabIndex={0}
+              className="border-gray-300 border-[0.5px] rounded-[10px] px-4 p-3 cursor-pointer focus:border-blue-700 focus:border-[2px]"
+            >
+              <h4 className="text-sm font-semibold">32 GB</h4>
+            </div>
           </div>
         </div>
         <div className="flex items-center gap-9 mt-5">
-          <h4 className="text-md font-semibold">Color: </h4>
-          <div className="ml-[0.5rem]">
-            <Dropdown className="border-[1px] border-gray-400 p-4 rounded-[10px]">
-              <DropdownTrigger>
-                <h3 className="text-sm font font-semibold">Choose An Option</h3>
-              </DropdownTrigger>
-              <DropdownContent className="p-3 w-full min-w-[100px] py-3">
-                <p className="text-sm font font-semibold">Choose An Option</p>
-                <li>Macbook</li>
-                <li className="mt-2">Iphone</li>
-              </DropdownContent>
-            </Dropdown>
+          <h4 className="text-md font-semibold">Colors: </h4>
+          <div className="flex items-center gap-3 ml-[1.5rem]">
+            <div
+              tabIndex={0}
+              className="relative rounded-full border-[2px]  border-gray-300  p-5 cursor-pointer focus:border-blue-700 focus:border-[2px] w-[18px] h-[18px]"
+            >
+              <div className="absolute white left-[1px] top-[4px] rounded-full bg-white border-white px-4 p-3 cursor-pointer focus:border-blue-700 focus:border-[2px] w-[26px] h-[26px]">
+                <div className="absolute top-[3px] left-[6px] border-[1px] rounded-full w-[26px] h-[26px] bg-red-600 purple"></div>
+              </div>
+            </div>
+            <div
+              tabIndex={0}
+              className="relative rounded-full border-[2px]  border-gray-300  p-5 cursor-pointer focus:border-blue-700 focus:border-[2px] w-[18px] h-[18px]"
+            >
+              <div className="absolute white left-[1px] top-[4px] rounded-full bg-white border-white px-4 p-3 cursor-pointer focus:border-blue-700 focus:border-[2px] w-[26px] h-[26px]">
+                <div className="absolute top-[3px] left-[6px] border-[1px] rounded-full w-[26px] h-[26px] bg-blue-600 purple"></div>
+              </div>
+            </div>
+            <div
+              tabIndex={0}
+              className="relative rounded-full border-[2px]  border-gray-300  p-5 cursor-pointer focus:border-blue-700 focus:border-[2px] w-[18px] h-[18px]"
+            >
+              <div className="absolute white left-[1px] top-[4px] rounded-full bg-white border-white px-4 p-3 cursor-pointer focus:border-blue-700 focus:border-[2px] w-[26px] h-[26px]">
+                <div className="absolute top-[3px] left-[6px] border-[1px] rounded-full w-[26px] h-[26px] bg-purple-600 purple"></div>
+              </div>
+            </div>
           </div>
-        </div> */}
+        </div>
         <div className="flex gap-3 items-center mt-[50px]">
           <div className="border-gray-300 border-[0.5px] rounded-[5px] px-6 py-5">
             {count}

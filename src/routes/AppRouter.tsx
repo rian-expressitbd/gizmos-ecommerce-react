@@ -11,6 +11,9 @@ import GetInTouch from "@/pages/GetInTouch/GetInTouch";
 import NotFoundPage from "@/pages/NotFoundPage";
 import PricingPlans from "@/pages/pricing-plans/PricingPlans";
 import PrivacyPolicy from "@/pages/PrivacyPolicy/PrivacyPolicy";
+import AccordionShop from "@/pages/shop/AllShopPages/AccordionShop";
+import VariableProductA from "@/pages/shop/AllShopPages/VariableShopA";
+import VariableProductB from "@/pages/shop/AllShopPages/VariableShopB";
 import SingleProductDetails from "@/pages/shop/SingleProductDetails/SingleProductDetails";
 import SingleProductDetailsOne from "@/pages/shop/SingleProductDetails/SingleProductDetailsOne";
 import SingleProductDetailsTwo from "@/pages/shop/SingleProductDetails/SingleProductDetailsTwo";
@@ -41,6 +44,13 @@ const AppRouter: React.FC = () => {
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/shop" element={<ShopWithCategory />} />
+        {/* All shop pages  */}
+        <Route path="/shop/standard" element={<SingleProductDetailsOne />} />
+        <Route path="/shop/accordion" element={<AccordionShop />} />
+        <Route path="/shop/variable-a" element={<VariableProductA />} />
+        <Route path="/shop/variable-b" element={<VariableProductB />} />
+        {/* All shop pages  */}
+
         <Route path="/best-sellers" element={<BestSellers />} />
         <Route path="/blog" element={<Blogs />} />
         <Route path="/blog-details" element={<BlogDetails />} />
