@@ -12,9 +12,21 @@ import NotFoundPage from "@/pages/NotFoundPage";
 import PricingPlans from "@/pages/pricing-plans/PricingPlans";
 import PrivacyPolicy from "@/pages/PrivacyPolicy/PrivacyPolicy";
 import AccordionShop from "@/pages/shop/AllShopPages/AccordionShop";
+import BannerShopPage from "@/pages/shop/AllShopPages/BannerShopPage";
+import FilterShopPage from "@/pages/shop/AllShopPages/FilterShopPage";
+import FiveColumnsWide from "@/pages/shop/AllShopPages/FiveColumnsWide";
+import FourColumnsShop from "@/pages/shop/AllShopPages/FourColumnsShop";
+import FourColumnsWide from "@/pages/shop/AllShopPages/FourColumnsWide";
 import GrouppedProduct from "@/pages/shop/AllShopPages/GrouppedShop";
+import IconShopPage from "@/pages/shop/AllShopPages/IconShopPage";
 import NewProduct from "@/pages/shop/AllShopPages/NewProduct";
 import SaleProduct from "@/pages/shop/AllShopPages/SaleProduct";
+import SixColumnsWide from "@/pages/shop/AllShopPages/SixColumnsWide";
+import SliderList from "@/pages/shop/AllShopPages/SliderList";
+import SoldProduct from "@/pages/shop/AllShopPages/SoldProduct";
+import StandardShopPage from "@/pages/shop/AllShopPages/StandardShopPage";
+import ThreeColumnsShop from "@/pages/shop/AllShopPages/ThreeColumnsShop";
+import TwoColumnsShop from "@/pages/shop/AllShopPages/TwoColumnsShop";
 import VariableProductA from "@/pages/shop/AllShopPages/VariableShopA";
 import VariableProductB from "@/pages/shop/AllShopPages/VariableShopB";
 import SingleProductDetails from "@/pages/shop/SingleProductDetails/SingleProductDetails";
@@ -55,6 +67,19 @@ const AppRouter: React.FC = () => {
         <Route path="/shop/groupped" element={<GrouppedProduct />} />
         <Route path="/shop/new" element={<NewProduct />} />
         <Route path="/shop/sale" element={<SaleProduct />} />
+        <Route path="/shop/sold" element={<SoldProduct />} />
+        <Route path="/shop/standard-list" element={<StandardShopPage />} />
+        <Route path="/shop/banner-list" element={<BannerShopPage />} />
+        <Route path="/shop/category-icons" element={<IconShopPage />} />
+        <Route path="/shop/filter-top" element={<FilterShopPage />} />
+        <Route path="/shop/countdown-list" element={<BestSellers />} />
+        <Route path="/shop/slider" element={<SliderList />} />
+        <Route path="/shop/two-columns" element={<TwoColumnsShop />} />
+        <Route path="/shop/three-columns" element={<ThreeColumnsShop />} />
+        <Route path="/shop/four-columns" element={<FourColumnsShop />} />
+        <Route path="/shop/four-columns-wide" element={<FourColumnsWide />} />
+        <Route path="/shop/five-columns-wide" element={<FiveColumnsWide />} />
+        <Route path="/shop/six-columns-wide" element={<SixColumnsWide />} />
         {/* All shop pages  */}
 
         <Route path="/best-sellers" element={<BestSellers />} />

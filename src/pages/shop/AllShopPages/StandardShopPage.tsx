@@ -1,12 +1,13 @@
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { Image } from "@/components/ui/image";
 import CommonLayout from "@/layouts/common-layout";
+import ShopWithCategoryRight from "@/pages/ShopWithCategory/ShopWithCategoryRight";
 import { useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import ShopWithCategoryRight from "./ShopWithCategoryRight";
 
-export default function ShopWithCategory() {
+
+export default function StandardShopPage() {
   const [expandedCategories, setExpandedCategories] = useState(true);
   const [expandedBrands, setExpandedBrands] = useState(true);
   const [expandedModels, setExpandedModels] = useState(true);
@@ -79,6 +80,8 @@ export default function ShopWithCategory() {
       <div className="mt-[70px] flex flex-col items-start lg:flex-row gap-9">
         <div className="filters">
           <div className="w-64  bg-white rounded-lg shadow-sm">
+            <h2 className="text-lg font-semibold mb-4">Category</h2>
+
             {/* Categories Section */}
             <div className="mb-6">
               <div

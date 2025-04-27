@@ -7,9 +7,10 @@ import {
 // import { Image } from "@/components/ui/image";
 import { Link } from "react-router-dom";
 import Paginations from "../ui-kit/Pagination";
+import { Image } from "@/components/ui/image";
 // import ShopWithCategoryIcons from "./ShopWithCategoryIcons";
 
-export default function ShopWithCategoryRight() {
+export default function ShopRightWithBanner() {
   const products = [
     {
       id: 1,
@@ -86,11 +87,11 @@ export default function ShopWithCategoryRight() {
   ];
   return (
     <div>
-      {/* <div className="relative">
+      <div className="relative">
         <Image
           rounded="md"
           className=""
-          src="shop-banner.jpg"
+          src="/shop-banner.jpg"
           alt="shop-banner"
         />
         <div className="flex flex-col justify-between absolute top-[19px]  p-12 h-full">
@@ -104,7 +105,7 @@ export default function ShopWithCategoryRight() {
             <h1 className="text-4xl text-white mt-3">20% OFF</h1>
           </div>
         </div>
-      </div> */}
+      </div>
       <div className="mt-[50px]">
         {/* <div className="mb-[50px]">
           <ShopWithCategoryIcons />

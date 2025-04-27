@@ -7,9 +7,10 @@ import {
 // import { Image } from "@/components/ui/image";
 import { Link } from "react-router-dom";
 import Paginations from "../ui-kit/Pagination";
-// import ShopWithCategoryIcons from "./ShopWithCategoryIcons";
 
-export default function ShopWithCategoryRight() {
+import ShopWithCategoryIcons from "./ShopWithCategoryIcons";
+
+export default function ShopRightWithIcons() {
   const products = [
     {
       id: 1,
@@ -90,7 +91,7 @@ export default function ShopWithCategoryRight() {
         <Image
           rounded="md"
           className=""
-          src="shop-banner.jpg"
+          src="/shop-banner.jpg"
           alt="shop-banner"
         />
         <div className="flex flex-col justify-between absolute top-[19px]  p-12 h-full">
@@ -106,9 +107,9 @@ export default function ShopWithCategoryRight() {
         </div>
       </div> */}
       <div className="mt-[50px]">
-        {/* <div className="mb-[50px]">
+        <div className="mb-[50px]">
           <ShopWithCategoryIcons />
-        </div> */}
+        </div>
 
         <h2 className="text-2xl font-semibold">Electronics & Appliances</h2>
         <div className="flex justify-end">

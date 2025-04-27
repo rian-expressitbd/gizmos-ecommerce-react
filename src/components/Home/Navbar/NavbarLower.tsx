@@ -249,10 +249,10 @@ export default function NavbarLower() {
                           Standard
                         </Link>
                         <Link
-                          to="/shop/barrier-list"
+                          to="/shop/banner-list"
                           className="hover:text-blue-500"
                         >
-                          Standard with Barrier
+                          Standard with Banner
                         </Link>
                         <Link
                           to="/shop/category-icons"
@@ -267,13 +267,13 @@ export default function NavbarLower() {
                           Filter On Top
                         </Link>
                         <Link
-                          to="/shop/courtsform"
+                          to="/shop/countdown-list"
                           className="hover:text-blue-500"
                         >
-                          Courtsform List
+                          Countdown List
                         </Link>
-                        <Link to="/shop/bilder" className="hover:text-blue-500">
-                          Bilder
+                        <Link to="/shop/slider" className="hover:text-blue-500">
+                          Slider
                         </Link>
                       </div>
                     </div>
