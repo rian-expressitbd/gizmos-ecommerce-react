@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
 import { Image } from "@/components/ui/image";
 import { FaChevronRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 type image = {
   img: string;
@@ -8,9 +8,9 @@ type image = {
 
 export default function BlogWithImages({ img }: image) {
   return (
-    <div>
-      <div className="">
-        <Image rounded="lg" src={img} alt="" />
+    <div className="w-full">
+      <div className="w-full">
+        <Image className="w-full" rounded="lg" src={img} alt="" />
         <div className="mt-5">
           <p className="text-sm text-gray-400">
             ELECTRONICS | SEPTEMBER 28, 2022
@@ -26,13 +26,14 @@ export default function BlogWithImages({ img }: image) {
             Proin inan tincidunt sem. Etiam sed dapibus augue. Praesent eu
             pulvinar est ed quis.
           </p>
-          <Button
-            className="flex gap-4 items-center bg-blue-600 p-4 mt-4"
+          <Link
+            to="/blog/blog-details"
+            className="flex gap-4 items-center text-white w-[145px] bg-blue-600 p-4 mt-4"
             title="read-more-btn"
           >
             <p className="text-sm text-white font-semibold">READ MORE</p>
             <FaChevronRight />
-          </Button>
+          </Link>
         </div>
       </div>
     </div>

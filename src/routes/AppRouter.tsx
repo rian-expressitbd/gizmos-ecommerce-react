@@ -2,6 +2,13 @@ import App from "@/App";
 import About from "@/pages/about/About";
 import BestSellers from "@/pages/BestSellers/BestSellers";
 import BlogDetails from "@/pages/BlogDetails/BlogDetails";
+import BlogDetailsWithSlider from "@/pages/BlogDetails/BlogDetailsWithSlider";
+import BlogLeftSidebar from "@/pages/blogs/AllBlogPages/BlogLeftSidebar";
+import BlogLinkPost from "@/pages/blogs/AllBlogPages/BlogLinkPost";
+import BlogNoSidebar from "@/pages/blogs/AllBlogPages/BlogNoSidebar";
+import BlogQuotePost from "@/pages/blogs/AllBlogPages/BlogQuotePost";
+import BlogRightSidebar from "@/pages/blogs/AllBlogPages/BlogRightSidebar";
+import BlogVideoPost from "@/pages/blogs/AllBlogPages/BlogVideoPost";
 import Blogs from "@/pages/blogs/Blogs";
 import CartPage from "@/pages/cart/Cart";
 import Checkout from "@/pages/checkout/Checkout";
@@ -82,6 +89,22 @@ const AppRouter: React.FC = () => {
         <Route path="/shop/six-columns-wide" element={<SixColumnsWide />} />
         {/* All shop pages  */}
 
+        {/* All Blog Pages  */}
+        <Route path="/blog/right-sidebar" element={<BlogRightSidebar />} />
+        <Route path="/blog/left-sidebar" element={<BlogLeftSidebar />} />
+        <Route path="/blog/no-sidebar" element={<BlogNoSidebar />} />
+        <Route path="/blog/blog-details" element={<BlogDetails />} />
+        <Route path="/blog/post/standard" element={<BlogDetails />} />
+        <Route path="/blog/post/gallery" element={<BlogDetailsWithSlider />} />
+        <Route path="/blog/post/quote" element={<BlogQuotePost />} />
+        <Route path="/blog/post/link" element={<BlogLinkPost />} />
+        <Route path="/blog/post/video" element={<BlogVideoPost />} />
+        {/* All Blog Pages  */}
+
+        {/* pending tasks.......... : */}
+        {/* filter on top  */}
+        {/* Slider  */}
+        {/* My Account  */}
         <Route path="/best-sellers" element={<BestSellers />} />
         <Route path="/blog" element={<Blogs />} />
         <Route path="/blog-details" element={<BlogDetails />} />

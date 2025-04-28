@@ -1,6 +1,6 @@
 import { BsLink45Deg } from "react-icons/bs";
 
-export default function Link() {
+export default function Links() {
   return (
     <div className="bg-[#F3F6FB] rounded-md flex items-center gap-6 p-[3.5rem]">
       <BsLink45Deg size={44} />
