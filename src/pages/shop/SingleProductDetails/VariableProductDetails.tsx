@@ -15,7 +15,7 @@ export default function VariableProductDetailsOne() {
   const [image, setImage] = useState("featured7.jpg");
   const [count, setCount] = useState(0);
   return (
-    <div className=" mx-auto mt-[50px] mb-[50px] flex  flex-col xl:flex-row gap-32">
+    <div className=" mx-auto mt-[50px] mb-[50px] flex  flex-col xl:flex-row xl:gap-32">
       <div className="flex flex-col gap-4">
         <Image
           src={`/${image}`}
@@ -26,7 +26,7 @@ export default function VariableProductDetailsOne() {
       </div>
 
       <div className="w-full lg:w-[670px] ">
-        <h1 className="text-lg lg:text-5xl leading-[1.5] font-semibold">
+        <h1 className="text-3xl lg:text-5xl leading-[1.5] font-semibold">
           4K Smart Monitor Vantablack Expo GPS-8377366J
         </h1>
         <h2 className="text-3xl mt-[50px]">$1,150</h2>

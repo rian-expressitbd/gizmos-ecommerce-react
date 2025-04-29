@@ -15,18 +15,18 @@ export default function SingleProductOne() {
   const [image, setImage] = useState("featured7.jpg");
   const [count, setCount] = useState(0);
   return (
-    <div className=" mx-auto mt-[50px] mb-[50px] flex  flex-col xl:flex-row gap-32">
-      <div className="flex flex-col gap-4">
+    <div className=" mx-auto mt-[50px] mb-[50px] flex  flex-col lg:flex-row gap-2 xl:gap-32">
+      <div className="flex flex-col gap-4 w-full lg:w-1/2">
         <Image
           src={`/${image}`}
           alt="monitor"
-          className="border-gray-300 border-[0.5px] w-full  xl:w-[670px] "
+          className="border-gray-300 border-[0.5px] w-full   "
         />
         <ImagesSlider setImage={setImage} />
       </div>
 
-      <div className="w-full lg:w-[670px] ">
-        <h1 className="text-lg lg:text-5xl leading-[1.5] font-semibold">
+      <div className="w-full lg:w-1/2 ">
+        <h1 className="text-3xl lg:text-4xl xl:text-5xl leading-[1.5] font-semibold">
           4K Smart Monitor Vantablack Expo GPS-8377366J
         </h1>
         <h2 className="text-3xl mt-[50px]">$1,150</h2>

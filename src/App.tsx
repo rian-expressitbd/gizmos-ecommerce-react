@@ -11,6 +11,7 @@ import Slider from "./components/Home/Slider/Slider";
 import TopCategories from "./components/Home/TopCategories/TopCategories";
 import Blogs from "./components/Home/Blogs/Blogs";
 import Footer from "./components/Home/Footer/Footer";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <Brands />
       <Blogs />
       <Footer />
+      <Toaster />
     </>
   );
 }

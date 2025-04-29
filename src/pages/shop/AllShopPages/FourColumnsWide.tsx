@@ -90,7 +90,7 @@ export default function FourColumnsWide() {
         <Breadcrumb />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-[40px] mt-[50px] mb-5">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-[20px] mt-[50px] mb-5">
         {/* Map through products and apply special styling for the 3rd item */}
         {products.map((product, index) => (
           <div

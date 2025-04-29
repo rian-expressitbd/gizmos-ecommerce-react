@@ -210,10 +210,10 @@ export default function NavbarLower() {
                           External Product
                         </Link>
                         <Link
-                          to="/shop/correlation"
+                          to="/shop/cowntdown"
                           className="hover:text-blue-500"
                         >
-                          Correlation Product
+                          Cowndown Product
                         </Link>
                         <Link
                           to="/shop/dominidable"

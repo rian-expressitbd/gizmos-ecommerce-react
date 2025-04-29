@@ -2,7 +2,7 @@ import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { ProductCardForLargeImg } from "@/components/ui/cards/ProductCardForLargeImg";
 import CommonLayout from "@/layouts/common-layout";
 
-export default function FourColumnsShop() {
+export default function SliderShop() {
   const products = [
     {
       id: 1,
@@ -82,7 +82,7 @@ export default function FourColumnsShop() {
       <div className="mt-5">
         <Breadcrumb />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-[20px] mt-[50px] mb-5">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-[40px] mt-[50px] mb-5">
         {/* Map through products and apply special styling for the 3rd item */}
         {products.map((product, index) => (
           <div

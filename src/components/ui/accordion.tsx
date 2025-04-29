@@ -40,7 +40,7 @@ export const AccordionContent = ({
   return (
     <div
       className={`overflow-hidden transition-all duration-200 ${
-        isOpen ? "max-h-96" : "max-h-0"
+        isOpen ? "max-h-full" : "max-h-0"
       }`}
     >
       <div className="p-4 bg-white">{children}</div>
@@ -55,7 +55,11 @@ type AccordionProps = {
   defaultOpen?: boolean; // Added this prop type
 };
 
-export const Accordion = ({ trigger, children, defaultOpen = false }: AccordionProps) => {
+export const Accordion = ({
+  trigger,
+  children,
+  defaultOpen = false,
+}: AccordionProps) => {
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
   const toggleAccordion = () => {

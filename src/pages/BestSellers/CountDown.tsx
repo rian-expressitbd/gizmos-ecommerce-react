@@ -63,9 +63,9 @@ export default function CountDown() {
   };
 
   return (
-    <div className="grid grid-cols-2 xl:grid-cols-4 justify-center items-center gap-2  md:md-gap-2 mt-[40px] mb-[40px]">
+    <div className="grid grid-cols-4  justify-center items-center gap-2 lg:gap-1 xl:gap-2  mt-[40px] mb-[40px]">
       {/* Days */}
-      <div className="flex flex-col items-center bg-[#F3F6FB] rounded-[10px] p-2 md:p-5 w-[72.4px] place-self-center lg:w-[100%]">
+      <div className="flex flex-col items-center bg-[#F3F6FB] rounded-[10px] p-2 md:p-5 w-[74px] place-self-center md:w-[100%]">
         <span className="text-xs lg:text-sm text-gray-600 font-medium uppercase tracking-wider">
           Days
         </span>
@@ -73,7 +73,7 @@ export default function CountDown() {
       </div>
 
       {/* Hours */}
-      <div className="flex flex-col items-center bg-[#F3F6FB] rounded-[10px] p-2 md:p-5 w-[72.4px] place-self-center lg:w-[100%]">
+      <div className="flex flex-col items-center bg-[#F3F6FB] rounded-[10px] p-2 md:p-5 w-[74px] place-self-center md:w-[100%]">
         <span className="text-xs lg:text-sm text-gray-600 font-medium uppercase tracking-wider">
           Hours
         </span>
@@ -83,7 +83,7 @@ export default function CountDown() {
       </div>
 
       {/* Minutes */}
-      <div className="flex flex-col items-center bg-[#F3F6FB] rounded-[10px] p-2 md:p-5 w-[72.4px] place-self-center lg:w-[100%]">
+      <div className="flex flex-col items-center bg-[#F3F6FB] rounded-[10px] p-2 md:p-5 w-[74px] place-self-center md:w-[100%]">
         <span className="text-xs lg:text-sm text-gray-600 font-medium uppercase tracking-wider">
           Minutes
         </span>
@@ -93,7 +93,7 @@ export default function CountDown() {
       </div>
 
       {/* Seconds */}
-      <div className="flex flex-col items-center bg-[#F3F6FB] rounded-[10px] p-2 md:p-5 w-[72.4px] place-self-center lg:w-[100%]">
+      <div className="flex flex-col items-center bg-[#F3F6FB] rounded-[10px] p-2 md:p-5 w-[74px] place-self-center md:w-[100%]">
         <span className="text-xs lg:text-sm text-gray-600 font-medium uppercase tracking-wider">
           Seconds
         </span>
