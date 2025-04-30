@@ -57,17 +57,6 @@ const initialCart: CartItem[] = [
 
 const Wishlist: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
-  // const [wishlist, setWishlist] = useState<CartItem[]>([]);
-
-  // useEffect(() => {
-  //   const wishlistedProductId = JSON.parse(
-  //     localStorage.getItem("ecommerce-wishlist-data") || ""
-  //   );
-  //   const wishlist = initialCart.filter(
-  //     (cart) => cart.id == wishlistedProductId
-  //   );
-  //   setWishlist(wishlist);
-  // }, []);
 
   // Icons with their respective delays
   const icons = [

@@ -19,6 +19,8 @@ import Tags from "../Tags";
 import FollowUs from "../FollowUs";
 import Newsletter from "../Newsletter";
 import Infos from "../Infos";
+import TextLarge from "@/pages/BlogDetails/TextLarge";
+import Texts from "@/pages/BlogDetails/Texts";
 
 export default function BlogLinkPost() {
   return (
@@ -47,14 +49,7 @@ export default function BlogLinkPost() {
               <h3 className="text-2xl font-semibold">
                 Futuristic Interactive Designs
               </h3>
-              <p className="mt-4 text-sm text-gray-400">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                augue ligula, feugiat ut nulla perpet. Ut est lacus, molestie in
-                no, icula mea ipsum. Nunc faucibus, nisl id dapibus finibus,
-                enim diam interdum nulla, sed laoreet risus lectus. Vivamus
-                viverra tem pus. Proin inan tincidunt sem. Etiam sed dapibus
-                augue. Praesent eu pulvinar est ed quis.
-              </p>
+              <Texts />
             </div>
           </div>
           <div className="flex items-center gap-3 mt-3">
@@ -65,38 +60,14 @@ export default function BlogLinkPost() {
             </h2>
           </div>
           <div className="mt-3">
-            <p className="text-sm text-gray-400">
-              Lorem ipsum dolor sit amet, id duo diam scaevola, ad usu alienum
-              rationibus philosophia, ad etiam corrumpit interpretaris eum.
-              Tation mucius dolorm pro in, te tamquam molestie imperdiet cum.
-              Sit quis ubique ei, in eum diceret probatus. Ut qui case vertere
-              mea ei. At sea utmur fuisset tibique ali quenean lor. Lorem ispum
-              doler bovum. Morbi tincidunt ornare massa eget egestas. In nisl ue
-              eu ultrices. Scelerisque fermentum dui faucibus in. Egestas
-              pretium aenean pharetra magna ac placerat. Lacus viverra vitae
-              sequat ac felis donec et. Velit scelerisque in dictum non
-              consectetur. Malesuada fames ac turpis egestas maecenas pharetra
-              is mauris sit amet prima.
-            </p>
+            <TextLarge />
           </div>
           <div className="mt-3">
-            <p className="text-sm text-gray-400">
-              Mattis rhoncus urna neque viverra justo nec ultrices dui sapien.
-              Faucibus in ornare quam viverra orci sagittis eu voltpat odio.
-              Commodo ullam corper a lacus vestibulum. Morbi quis commodo has an
-              prima explicari.
-            </p>
+            <Texts />
           </div>
           <div className="mt-[40px]">
             <h3 className="text-2xl font-semibold">Discover the Magic</h3>
-            <p className="mt-4 text-sm text-gray-400">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In augue
-              ligula, feugiat ut nulla perpet. Ut est lacus, molestie in no,
-              icula mea ipsum. Nunc faucibus, nisl id dapibus finibus, enim diam
-              interdum nulla, sed laoreet risus lectus. Vivamus viverra tem pus.
-              Proin inan tincidunt sem. Etiam sed dapibus augue. Praesent eu
-              pulvinar est ed quis.
-            </p>
+            <TextLarge />
 
             <Image
               className="mt-3"
@@ -107,23 +78,8 @@ export default function BlogLinkPost() {
           </div>
           <div className="mt-[40px]">
             <h2 className="text-2xl font-semibold">Planning Point Of View</h2>
-            <p className="text-gray-400 text-sm">
-              Lorem ipsum dolor sit amet, id duo diam scaevola, ad usu alienum
-              rationibus philosophia, ad etiam corrumpit interpretaris eum.
-              Tation mucius dolorm pro in, te tamquam molestie imperdiet cum.
-              Sit quis ubique ei, in eum diceret probatus. Ut qui case verterm,
-              simul perfecto qualisque mea ei. At sea utmur fuisset tibique ali
-              quenean lorem ispum.
-            </p>
-            <p className="text-gray-400 text-sm mt-3">
-              In nisl nisi scelerisq ue eu ultrices. Sceleris fermentum dui
-              faucibus in. Egestas pretium aenean pharetra magna facilis
-              placerat. Lacus viverra vitae congue eu con sequat ac felis donec
-              et. Velit sceleris in dictum non consectetur. Malesua fames ac tu
-              retra convallis. Facilis is mauris sit amet massa vitae tortor
-              condimentum lacinia quis. Mattis rhoncus urna neque viverra justo
-              i sapien. Faucibus in ornare quam viverra orci sagittis.
-            </p>
+            <Texts />
+            <TextLarge />
           </div>
           <div className="text-sm font-semibold text-gray-500 mb-[40px] mt-[40px] flex justify-between items-center">
             <div>

@@ -1,0 +1,42 @@
+interface ItemType {
+    name: string;
+    count: number;
+  }
+  const categories: ItemType[] = [
+    { name: "Printers", count: 30 },
+    { name: "Activated Carbon", count: 1 },
+    { name: "Adapters", count: 2 },
+    { name: "Air-Te Air", count: 1 },
+    { name: "Aluminium", count: 4 },
+    { name: "Amplifiers", count: 1 },
+    { name: "Analog Watches", count: 3 },
+    { name: "Appliances", count: 9 },
+    { name: "Appliances Materials", count: 10 },
+    { name: "Audio", count: 4 },
+  ];
+
+  const brands: ItemType[] = [
+    { name: "Braun", count: 16 },
+    { name: "Cosmos", count: 7 },
+    { name: "En", count: 12 },
+    { name: "Lorem", count: 8 },
+    { name: "Menos", count: 6 },
+    { name: "Profusa", count: 9 },
+    { name: "Xmos", count: 10 },
+    { name: "Yelo", count: 10 },
+    { name: "Zeuss", count: 7 },
+  ];
+
+  const models: ItemType[] = [
+    { name: "128GB", count: 4 },
+    { name: "256GB", count: 3 },
+    { name: "64GB", count: 3 },
+  ];
+
+  const colors: ItemType[] = [
+    { name: "Black", count: 8 },
+    { name: "Blue", count: 2 },
+    { name: "Grey", count: 7 },
+    { name: "Orange", count: 5 },
+    { name: "White", count: 3 },
+  ];

@@ -5,11 +5,6 @@ import { BsInfoSquare } from "react-icons/bs";
 import { FaChevronDown, FaChevronUp, FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import ImagesSlider from "./ImagesSlider";
-// import {
-//   Dropdown,
-//   DropdownContent,
-//   DropdownTrigger,
-// } from "@/components/ui/dropdown";
 
 export default function SingleProductOne() {
   const [image, setImage] = useState("featured7.jpg");
@@ -36,36 +31,6 @@ export default function SingleProductOne() {
           pertinax sensibus id, error epicurei mea et. Qui purto zril laoreet.
           Ex error omnium interpretaris pro.
         </p>
-        {/* <div className="flex items-center gap-9 mt-[30px]">
-          <h4 className="text-md font-semibold">Model:</h4>
-          <div>
-            <Dropdown className="border-[1px] border-gray-400 p-4 rounded-[10px]">
-              <DropdownTrigger>
-                <h3 className="text-sm font font-semibold">Choose An Option</h3>
-              </DropdownTrigger>
-              <DropdownContent className="p-3 w-full min-w-[100px] py-3">
-                <p className="text-sm font font-semibold">Choose An Option</p>
-                <li>Macbook</li>
-                <li className="mt-2">Iphone</li>
-              </DropdownContent>
-            </Dropdown>
-          </div>
-        </div>
-        <div className="flex items-center gap-9 mt-5">
-          <h4 className="text-md font-semibold">Color: </h4>
-          <div className="ml-[0.5rem]">
-            <Dropdown className="border-[1px] border-gray-400 p-4 rounded-[10px]">
-              <DropdownTrigger>
-                <h3 className="text-sm font font-semibold">Choose An Option</h3>
-              </DropdownTrigger>
-              <DropdownContent className="p-3 w-full min-w-[100px] py-3">
-                <p className="text-sm font font-semibold">Choose An Option</p>
-                <li>Macbook</li>
-                <li className="mt-2">Iphone</li>
-              </DropdownContent>
-            </Dropdown>
-          </div>
-        </div> */}
         <div className="flex gap-3 items-center mt-[50px]">
           <div className="border-gray-300 border-[0.5px] rounded-[5px] px-6 py-5">
             {count}

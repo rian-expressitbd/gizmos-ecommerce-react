@@ -18,6 +18,8 @@ import {
 } from "react-icons/fa";
 import Comment from "./Comment";
 import LeaveReply from "./LeaveReply";
+import Texts from "./Texts";
+import TextLarge from "./TextLarge";
 
 export default function BlogDetails() {
   return (
@@ -34,14 +36,7 @@ export default function BlogDetails() {
               <h3 className="text-2xl font-semibold">
                 Futuristic Interactive Designs
               </h3>
-              <p className="mt-4 text-sm text-gray-400">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-                augue ligula, feugiat ut nulla perpet. Ut est lacus, molestie in
-                no, icula mea ipsum. Nunc faucibus, nisl id dapibus finibus,
-                enim diam interdum nulla, sed laoreet risus lectus. Vivamus
-                viverra tem pus. Proin inan tincidunt sem. Etiam sed dapibus
-                augue. Praesent eu pulvinar est ed quis.
-              </p>
+              <Texts />
             </div>
           </div>
           <div className="flex items-center gap-3 mt-3">
@@ -52,19 +47,7 @@ export default function BlogDetails() {
             </h2>
           </div>
           <div className="mt-3">
-            <p className="text-sm text-gray-400">
-              Lorem ipsum dolor sit amet, id duo diam scaevola, ad usu alienum
-              rationibus philosophia, ad etiam corrumpit interpretaris eum.
-              Tation mucius dolorm pro in, te tamquam molestie imperdiet cum.
-              Sit quis ubique ei, in eum diceret probatus. Ut qui case vertere
-              mea ei. At sea utmur fuisset tibique ali quenean lor. Lorem ispum
-              doler bovum. Morbi tincidunt ornare massa eget egestas. In nisl ue
-              eu ultrices. Scelerisque fermentum dui faucibus in. Egestas
-              pretium aenean pharetra magna ac placerat. Lacus viverra vitae
-              sequat ac felis donec et. Velit scelerisque in dictum non
-              consectetur. Malesuada fames ac turpis egestas maecenas pharetra
-              is mauris sit amet prima.
-            </p>
+            <TextLarge />
           </div>
           <div className="mt-3">
             <p className="text-sm text-gray-400">

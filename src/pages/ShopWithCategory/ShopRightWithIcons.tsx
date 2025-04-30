@@ -4,7 +4,6 @@ import {
   DropdownContent,
   DropdownTrigger,
 } from "@/components/ui/dropdown";
-// import { Image } from "@/components/ui/image";
 import { Link } from "react-router-dom";
 import Paginations from "../ui-kit/Pagination";
 
@@ -87,25 +86,6 @@ export default function ShopRightWithIcons() {
   ];
   return (
     <div>
-      {/* <div className="relative">
-        <Image
-          rounded="md"
-          className=""
-          src="/shop-banner.jpg"
-          alt="shop-banner"
-        />
-        <div className="flex flex-col justify-between absolute top-[19px]  p-12 h-full">
-          <div>
-            <h3 className="text-white font-semibold text-2xl">
-              VR Gaming With Friends
-            </h3>
-          </div>
-          <div className="">
-            <h6 className="text-xs text-white font-semibold">WEEKEND SALE</h6>
-            <h1 className="text-4xl text-white mt-3">20% OFF</h1>
-          </div>
-        </div>
-      </div> */}
       <div className="mt-[50px]">
         <div className="mb-[50px]">
           <ShopWithCategoryIcons />
