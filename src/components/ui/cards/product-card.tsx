@@ -35,10 +35,10 @@ export const ProductCard = ({ product, index }: ProductCardProps) => {
       {/* Product content that moves up on hover */}
       {index == 2 ? (
         <div>
-          <div className="text-sm text-white text-center w-[80px] rounded-[10px] bg-blue-600 p-4">
+          <div className="text-sm text-white text-center w-[80px] aspect-square rounded-[3px] bg-blue-600 py-4 px-4 flex items-center justify-center">
             <h4>-20%</h4>
           </div>
-          <div className="text-sm text-white text-center w-[80px] rounded-[10px] bg-blue-600 p-4 mt-2">
+          <div className="text-sm text-white text-center w-[80px] rounded-[3px] bg-blue-600 p-2 mt-1">
             <h4>Save</h4>
           </div>
         </div>

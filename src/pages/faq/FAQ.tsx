@@ -50,15 +50,15 @@ export default function FAQ() {
       <div className="mx-auto w-[90%]">
         <Breadcrumb className="mt-[30px]" />
         <h1 className="text-4xl font-semibold mt-[40px]">FAQ Page</h1>
-        <div className="flex justify-start gap-14 mt-[30px]">
-          <div className="w-2/3">
+        <div className="flex flex-col lg:flex-row justify-start gap-14 mt-[30px]">
+          <div className="w-full lg:w-2/3">
             <FaqAccordion />
             <FaqAccordion />
             <FaqAccordion />
             <ContactForm />
           </div>
-          <div className="w-1/3">
-            <div className="relative flex flex-col gap-36">
+          <div className="w-full lg:w-1/3">
+            <div className="relative flex flex-col gap-7 lg:gap-36">
               <div>
                 <input
                   className="p-4 w-full rounded-[10px] border-gray-300 border-[0.5px]"

@@ -10,12 +10,12 @@ export default function GetInTouch() {
       <div className="mt-5">
         <Breadcrumb />
         <OurVision />
-        <div className="flex items-center gap-10 mt-[40px] mb-[40px]">
-          <div className="w-1/2">
+        <div className="flex flex-col lg:flex-row items-center gap-10 mt-[40px] mb-[40px]">
+          <div className="w-full lg:w-1/2">
             <Map />
           </div>
 
-          <div className="w-1/2">
+          <div className="w-full lg:w-1/2">
             <h1 className="text-4xl font-semibold">Get in touch with us</h1>
             <div className="mt-3">
               <p className="text-sm text-[#677AB0]">

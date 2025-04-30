@@ -42,7 +42,7 @@ export default function StoreLocator() {
               </div>
             </div>
             <div>
-              <h2 className="text-2xl font font-semibold mb-5">
+              <h2 className="text-2xl font font-semibold mb-5 mt-8 md:mt-0">
                 Larkhal Store
               </h2>
               <div className="flex gap-2 items-start">
@@ -67,7 +67,7 @@ export default function StoreLocator() {
               </div>
             </div>
             <div>
-              <h2 className="text-2xl font font-semibold mb-5">London Store</h2>
+              <h2 className="text-2xl font font-semibold mb-5 mt-8 md:mt-0">London Store</h2>
               <div className="flex gap-2 items-start">
                 <FaTv size={24} />
                 <p className="text-sm text-[#677AB0]">+000 123 456 789</p>

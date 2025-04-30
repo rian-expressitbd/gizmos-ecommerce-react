@@ -20,14 +20,14 @@ export default function About() {
           alt=""
         />
       </div>
-      <div className="mx-auto w-[90%] mb-[70px]">
-        <div className="flex gap-20 mt-[50px] mb-[50px]">
-          <div className="w-1/3">
-            <h1 className="text-4xl font-semibold">
+      <div className="mx-auto w-[90%] mb-5 lg:mb-[70px]">
+        <div className="flex flex-col lg:flex-row mx-auto gap-7 lg:gap-20 mt-3 lg:mt-[50px] mb-3 lg:mb-[50px]">
+          <div className="w-full lg:w-1/3">
+            <h1 className="text-2xl lg:text-4xl font-semibold">
               More About Company History
             </h1>
           </div>
-          <div className="flex flex-col w-2/3">
+          <div className="flex flex-col w-full lg:w-2/3">
             <p className="text-sm text-[#677AB0]">
               Nulla porta nulla nec orci vulputate, id rutrum sapien varius.
               Class aptent taciti sociosqu ad litora torquent per conubia sed

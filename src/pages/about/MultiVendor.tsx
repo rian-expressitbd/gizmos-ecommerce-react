@@ -23,8 +23,8 @@ const MultiVendor = () => {
   ];
   return (
     <div className="mx-auto w-[90%]">
-      <h1 className="text-5xl font-semibold py-5 mt-[50px]">Multi-Vendor</h1>
-      <div className="grid grid-cols-6 gap-6 p-6 mt-[30px] mb-[30px]">
+      <h1 className="text-2xl lg:text-5xl font-semibold py-5 mt-5 lg:mt-[50px]">Multi-Vendor</h1>
+      <div className="grid grid-cols-2 lg:grid-cols-6 gap-2 lg:gap-6 p-6 mt-[30px] mb-[30px]">
         {logos.map((logo, index) => (
           <div
             key={index}

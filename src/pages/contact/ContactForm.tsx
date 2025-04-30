@@ -5,8 +5,8 @@ import { BiSolidJoystick } from "react-icons/bi";
 
 export default function ContactForm() {
   return (
-    <div className="mt-[50px] mb-[50px] flex items-start gap-4">
-      <div className="w-1/3">
+    <div className="mt-[50px] mb-[50px] flex flex-col lg:flex-row items-start gap-4">
+      <div className="w-full lg:w-1/3">
         <h1 className="text-4xl font-semibold">Get in touch with us</h1>
         <div className="mt-3">
           <p className="text-sm text-[#677AB0]">
@@ -45,7 +45,7 @@ export default function ContactForm() {
           </div>
         </div>
       </div>
-      <div className="w-2/3">
+      <div className="w-full lg:w-2/3">
         <CommonContactForm />
       </div>
     </div>

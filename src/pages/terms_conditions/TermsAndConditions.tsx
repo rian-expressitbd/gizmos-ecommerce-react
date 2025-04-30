@@ -21,13 +21,13 @@ export default function TermsAndConditions() {
         </h1>
         <hr className="border-gray-300" />
         <div className="flex flex-col lg:flex-row items-start justify-between mt-[40px] mb-[40px]">
-          <div className="w-1/3">
+          <div className="w-full lg:w-1/3">
             <h3 className="text-2xl font-semibold">
               Purchases Terms and Conditions
             </h3>
           </div>
 
-          <div className="w-2/3">
+          <div className="w-full lg:w-2/3 mt-3 lg:mt-0">
             <p className="text-sm text-[#677AB0] ">
               Nulla porta nulla nec orci vulputate, id rutrum sapien varius.
               Class aptent taciti sociosqu ad litora torquent per conubia
@@ -53,11 +53,11 @@ export default function TermsAndConditions() {
         </div>
         <hr className="border-gray-300" />
         <div className="flex flex-col lg:flex-row items-start justify-between mt-[40px] mb-[40px]">
-          <div className="w-1/3">
+          <div className="w-full lg:w-1/3">
             <h3 className="text-2xl font-semibold">Website Terms of Use</h3>
           </div>
 
-          <div className="w-2/3 flex flex-col">
+          <div className="w-full lg:w-2/3 flex flex-col mt-3 lg:mt-0">
             <p className="text-sm text-[#677AB0]">
               Nulla porta nulla nec orci vulputate, id rutrum sapien varius.
               Class aptent taciti sociosqu ad litora torquent per conubia
@@ -70,7 +70,7 @@ export default function TermsAndConditions() {
             </p>
             <div className="mt-5">
               <div className="flex gap-2 items-start">
-                <FaTv size={24} />
+                <FaTv size={24} className="hidden md:block"/>
                 <p className="text-sm text-[#677AB0]">
                   Pellentesque porta egestas eros vel sollicitudin. Donec ut
                   nulla pulvinar, lobortis purus eu, interdum urna. Donec
@@ -78,7 +78,7 @@ export default function TermsAndConditions() {
                 </p>
               </div>
               <div className="flex gap-2 items-start mt-2">
-                <BiSolidJoystick size={24} />
+                <BiSolidJoystick size={24} className="hidden md:block"/>
                 <p className="text-sm text-[#677AB0]">
                   Pellentesque porta egestas eros vel sollicitudin. Donec ut
                   nulla pulvinar, lobortis purus eu, interdum urna. Donec
@@ -86,7 +86,7 @@ export default function TermsAndConditions() {
                 </p>
               </div>
               <div className="flex gap-2 items-start mt-2">
-                <TbDeviceWatch size={24} />
+                <TbDeviceWatch size={24} className="hidden md:block"/>
                 <p className="text-sm text-[#677AB0]">
                   Pellentesque porta egestas eros vel sollicitudin. Donec ut
                   nulla pulvinar, lobortis purus eu, interdum urna. Donec
@@ -94,7 +94,7 @@ export default function TermsAndConditions() {
                 </p>
               </div>
               <div className="flex gap-2 items-start mt-2">
-                <FaHeadphones size={24} />
+                <FaHeadphones size={24} className="hidden md:block" />
                 <p className="text-sm text-[#677AB0]">
                   Pellentesque porta egestas eros vel sollicitudin. Donec ut
                   nulla pulvinar, lobortis purus eu, interdum urna. Donec
@@ -106,12 +106,12 @@ export default function TermsAndConditions() {
         </div>
         <hr className="border-gray-300" />
         <div className="flex flex-col lg:flex-row items-start justify-between mt-[40px] mb-[40px]">
-          <div className="w-1/3">
+          <div className="w-full lg:w-1/3">
             <h3 className="text-2xl font-semibold">Intellectual Property</h3>
           </div>
 
-          <div className="w-2/3">
-            <ul className="list-disc pl-5 text-sm text-[#677AB0]">
+          <div className="w-full lg:w-2/3">
+            <ul className="list-disc pl-5 text-sm text-[#677AB0] mt-3 lg:mt-0">
               <li>
                 Nulla porta nulla nec orci vulputate, id rutrum sapien varius.
                 Class aptent taciti sociosqu ad litora torquent per conubia
@@ -135,12 +135,12 @@ export default function TermsAndConditions() {
         </div>
         <hr className="border-gray-300" />
         <div className="flex flex-col lg:flex-row items-start justify-between mt-[40px] mb-[40px]">
-          <div className="w-1/3">
+          <div className="w-full lg:w-1/3">
             <h3 className="text-2xl font-semibold">Intellectual Property</h3>
           </div>
 
-          <div className="w-2/3">
-            <ul className="list-disc pl-5 text-sm text-[#677AB0]">
+          <div className="w-full lg:w-2/3">
+            <ul className="list-disc pl-5 text-sm text-[#677AB0] mt-3 lg:mt-0">
               <p className="text-sm text-[#677AB0]">
                 Vestibulum convallis dui vel neque feugiat, vel ultricies mauris
                 faucibus. Lobortis purus eu, interdum urna. Donec dapibus ipsum
