@@ -1,11 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { InputField } from "@/components/ui/form/input-field";
 import { Image } from "@/components/ui/image";
-import { FaUser } from "react-icons/fa";
-import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
-export default function MyAccount() {
+export default function Login() {
   return (
     <div className="flex h-screen">
       {/* Left Side Image */}
@@ -24,8 +22,8 @@ export default function MyAccount() {
           <h3 className="font-bold text-4xl">
             Gizmos<span className="text-orange-500">.</span>
           </h3>
-          <Link to="/login" className="text-white font-medium">
-            Log in
+          <Link to="/account" className="text-white font-medium">
+            Register
           </Link>
         </div>
 
@@ -34,34 +32,13 @@ export default function MyAccount() {
           <div className="w-full max-w-md px-4">
             <h3 className="text-2xl font-semibold mb-6">Create an account</h3>
             <form className="space-y-4">
-              {/* Name Fields */}
-              <div className="flex gap-4">
-                <InputField
-                  id="firstName"
-                  label="First Name"
-                  placeholder="Howard"
-                  icon={FaUser}
-                  labelClassName="text-white"
-                  inputClassName="text-white bg-transparent"
-                />
-                <InputField
-                  id="last-name"
-                  type="text"
-                  label="Last Name"
-                  placeholder="Thurman"
-                  icon={FaUser}
-                  labelClassName="text-white"
-                  inputClassName="text-white bg-transparent"
-                />
-              </div>
-
               {/* Email */}
               <InputField
                 id="email"
                 type="email"
                 label="Email"
-                labelClassName="text-white"
                 placeholder="e.g. howard.thurman@gmail.com"
+                labelClassName="text-white"
                 inputClassName="text-white bg-transparent"
               />
 
@@ -70,8 +47,8 @@ export default function MyAccount() {
                 id="password"
                 type="password"
                 label="Password"
+                placeholder="password"
                 labelClassName="text-white"
-                placeholder="8+ characters"
                 inputClassName="text-white bg-transparent"
               />
 
@@ -91,8 +68,7 @@ export default function MyAccount() {
                 type="submit"
                 className="bg-blue-600 hover:bg-blue-700 transition-colors w-full flex items-center justify-center gap-2 p-4"
               >
-                <span>Get Started</span>
-                <FaArrowRightLong />
+                <span>Login</span>
               </Button>
             </form>
           </div>

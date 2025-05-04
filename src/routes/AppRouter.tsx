@@ -16,6 +16,8 @@ import Checkout from "@/pages/checkout/Checkout";
 import ContactUs from "@/pages/contact/ContactUs";
 import FAQ from "@/pages/faq/FAQ";
 import GetInTouch from "@/pages/GetInTouch/GetInTouch";
+import ForgotPassword from "@/pages/MyAccount/ForgotPassword";
+import Login from "@/pages/MyAccount/Login";
 import MyAccount from "@/pages/MyAccount/MyAccount";
 import NotFoundPage from "@/pages/NotFoundPage";
 import PricingPlans from "@/pages/pricing-plans/PricingPlans";
@@ -116,6 +118,8 @@ const AppRouter: React.FC = () => {
           {/* My Account  */}
 
           <Route path="/account" element={<MyAccount />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/weekly-discount" element={<WeeklyDiscount />} />
 
           <Route path="/best-sellers" element={<BestSellers />} />

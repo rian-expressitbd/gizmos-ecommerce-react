@@ -6,6 +6,7 @@
 body {
   overflow-x: hidden;
 }
+
 @layer base {
   :root {
     --color-primary: #696fc4;

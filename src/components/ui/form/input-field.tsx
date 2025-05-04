@@ -1,10 +1,10 @@
-
 import React from "react";
 import { IconType } from "react-icons";
 import { twMerge } from "tailwind-merge";
 import { FormFieldWrapper } from "./FormFieldWrapper";
 
-export interface InputFieldProps extends React.InputHTMLAttributes<HTMLInputElement> {
+export interface InputFieldProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {
   id: string;
   label?: string;
   value?: string;
@@ -12,6 +12,7 @@ export interface InputFieldProps extends React.InputHTMLAttributes<HTMLInputElem
   icon?: IconType;
   rightElement?: React.ReactNode;
   labelRightElement?: React.ReactNode;
+  labelClassName?: string;
   className?: string;
   inputClassName?: string;
   preserveErrorSpace?: boolean;
@@ -27,6 +28,7 @@ export const InputField = ({
   rightElement,
   labelRightElement,
   className,
+  labelClassName,
   inputClassName,
   preserveErrorSpace = true,
   error, // Destructure error from props
@@ -41,13 +43,18 @@ export const InputField = ({
       labelRightElement={labelRightElement}
       preserveErrorSpace={preserveErrorSpace}
       className={className}
+      labelClassName={labelClassName}
     >
-      <div className='relative'>
+      <div className="relative">
         {icon && (
           <div
             className={twMerge(
               "absolute left-3 top-1/2 transform -translate-y-1/2",
-              error ? "text-red-500" : value?.length ? "text-green-500" : "text-gray-400 dark:text-gray-500"
+              error
+                ? "text-red-500"
+                : value?.length
+                ? "text-green-500"
+                : "text-gray-400 dark:text-gray-500"
             )}
           >
             {React.createElement(icon, { className: "w-4 h-4" })}
@@ -72,7 +79,11 @@ export const InputField = ({
           )}
           {...props} // This now only spreads valid input props
         />
-        {rightElement && <div className='absolute right-3 top-1/2 transform -translate-y-1/2'>{rightElement}</div>}
+        {rightElement && (
+          <div className="absolute right-3 top-1/2 transform -translate-y-1/2">
+            {rightElement}
+          </div>
+        )}
       </div>
     </FormFieldWrapper>
   );
