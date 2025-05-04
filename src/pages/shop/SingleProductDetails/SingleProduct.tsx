@@ -68,7 +68,7 @@ export default function SingleProduct() {
               Computers, Equipment
             </h3>
           </div>
-          <div className="mt-[30px] bg-[#F3F6FB] flex items-start gap-3 p-6 rounded-[10px] w-full">
+          <div className="mt-[30px] bg-[#F3F6FB]  flex items-start gap-3 p-6 rounded-[10px] w-full">
             <BsInfoSquare size={24} />
             <div className="flex flex-col">
               <p className="text-sm">

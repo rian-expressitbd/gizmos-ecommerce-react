@@ -119,7 +119,7 @@ export default function ShopRightWithBanner() {
                 <h3 className="text-sm font font-semibold">Default Sorting</h3>
               </div>
             </DropdownTrigger>
-            <DropdownContent className="p-1 w-full min-w-[193px] py-3">
+            <DropdownContent className="p-1 w-full min-w-[193px] py-3 dark:bg-black">
               <p className="text-sm font font-semibold">Default Sorting</p>
               <li className="list-none mt-2">Sort By Popularity</li>
               <li className="mt-2 list-none">Sort By Latest</li>

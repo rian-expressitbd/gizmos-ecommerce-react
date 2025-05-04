@@ -36,7 +36,7 @@ export default function Filter() {
     { name: "White", count: 2 },
   ];
   return (
-    <div className="mt-5 p-5 bg-[#F3F6FB] shadow-lg rounded-lg">
+    <div className="mt-5 p-5 bg-[#F3F6FB] dark:bg-black shadow-lg rounded-lg">
       <h3 className="text-lg font-semibold mb-4">Filter</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {/* Category Filter */}

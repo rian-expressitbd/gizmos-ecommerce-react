@@ -2,7 +2,7 @@ import { BsLink45Deg } from "react-icons/bs";
 
 export default function Links() {
   return (
-    <div className="bg-[#F3F6FB] rounded-md flex items-center gap-6 p-[3.5rem]">
+    <div className="bg-[#F3F6FB] rounded-md flex items-center gap-6 p-[3.5rem] dark:text-black">
       <BsLink45Deg size={44} />
       <div className="flex flex-col">
         <h1 className="text-2xl font-semibold">

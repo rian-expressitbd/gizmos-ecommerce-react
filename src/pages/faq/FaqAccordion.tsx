@@ -4,7 +4,7 @@ export default function FaqAccordion() {
   return (
     <div>
       <div className="space-y-4">
-        <Accordion trigger="Description">
+        <Accordion  trigger="Description">
           <div className="space-y-4">
             <div>
               <h3 className="font-medium">4K Smart Monitor</h3>

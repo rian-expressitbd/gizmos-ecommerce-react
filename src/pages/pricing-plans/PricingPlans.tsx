@@ -1,10 +1,10 @@
 import { Breadcrumb } from "@/components/ui/breadcrumb";
-import CommonLayout from "@/layouts/common-layout";
+
 import PriceCard from "./PriceCard";
 
 export default function PricingPlans() {
   return (
-    <CommonLayout>
+    <>
       <div className="mt-5">
         <Breadcrumb />
         <div className="mt-[60px]">
@@ -17,6 +17,6 @@ export default function PricingPlans() {
           </div>
         </div>
       </div>
-    </CommonLayout>
+    </>
   );
 }

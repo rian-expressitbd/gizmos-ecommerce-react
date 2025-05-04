@@ -5,7 +5,7 @@ import { FaChevronRight } from "react-icons/fa";
 
 export const ShopBannerCard: React.FC = () => {
   return (
-    <div className="border-t pt-4">
+    <div className="border-t pt-4 dark:text-black">
       <h3 className="font-medium mb-2">Computers & Laptops</h3>
       <button className="w-full border border-blue-500 text-blue-500 py-2 rounded text-sm mb-4">
         SHOP NOW

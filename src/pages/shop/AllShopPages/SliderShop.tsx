@@ -1,6 +1,5 @@
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { ProductCardForLargeImg } from "@/components/ui/cards/ProductCardForLargeImg";
-import CommonLayout from "@/layouts/common-layout";
 
 export default function SliderShop() {
   const products = [
@@ -78,7 +77,7 @@ export default function SliderShop() {
     },
   ];
   return (
-    <CommonLayout>
+    <>
       <div className="mt-5">
         <Breadcrumb />
       </div>
@@ -95,6 +94,6 @@ export default function SliderShop() {
           </div>
         ))}
       </div>
-    </CommonLayout>
+    </>
   );
 }

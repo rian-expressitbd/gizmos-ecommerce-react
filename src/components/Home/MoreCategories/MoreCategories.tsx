@@ -23,7 +23,7 @@ export default function MoreCategories() {
   ];
 
   return (
-    <div className="mx-auto h-[100%] w-[90%] sm:w-[85%] lg:w-[90%] mb-12">
+    <div className="mx-auto h-[100%] w-[90%] sm:w-[85%] lg:w-[90%] mb-12 dark:text-black">
       <div className="flex flex-col 2xl:flex-row gap-4">
         {categories.map((category) => (
           <div

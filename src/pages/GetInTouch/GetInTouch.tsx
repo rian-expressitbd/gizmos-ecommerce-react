@@ -1,12 +1,12 @@
 import { Breadcrumb } from "@/components/ui/breadcrumb";
-import CommonLayout from "@/layouts/common-layout";
+
 import OurVision from "../contact/OurVision";
 import Map from "../contact/Map";
 import CommonContactForm from "../common/CommonContactForm";
 
 export default function GetInTouch() {
   return (
-    <CommonLayout>
+    <>
       <div className="mt-5">
         <Breadcrumb />
         <OurVision />
@@ -30,6 +30,6 @@ export default function GetInTouch() {
           </div>
         </div>
       </div>
-    </CommonLayout>
+    </>
   );
 }

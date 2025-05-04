@@ -1,5 +1,5 @@
 import { Breadcrumb } from "@/components/ui/breadcrumb";
-import CommonLayout from "@/layouts/common-layout";
+
 import Infos from "../blogs/Infos";
 import { Image } from "@/components/ui/image";
 import Newsletter from "../blogs/Newsletter";
@@ -23,7 +23,7 @@ import TextLarge from "./TextLarge";
 
 export default function BlogDetails() {
   return (
-    <CommonLayout>
+    <>
       <Breadcrumb className="mt-3" />
       <div className="flex mt-[50px] items-start gap-32">
         <div className="w-2/3">
@@ -200,6 +200,6 @@ export default function BlogDetails() {
           </div>
         </div>
       </div>
-    </CommonLayout>
+    </>
   );
 }

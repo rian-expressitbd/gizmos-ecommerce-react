@@ -1,6 +1,6 @@
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { Image } from "@/components/ui/image";
-import CommonLayout from "@/layouts/common-layout";
+
 import { useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -74,7 +74,7 @@ export default function ShopWithCategory() {
   };
 
   return (
-    <CommonLayout>
+    <>
       <Breadcrumb className="mt-5" />
       <div className="mt-[70px] flex flex-col items-start lg:flex-row gap-9">
         <div className="filters">
@@ -274,6 +274,6 @@ export default function ShopWithCategory() {
         </div>
         <ShopWithCategoryRight />
       </div>
-    </CommonLayout>
+    </>
   );
 }

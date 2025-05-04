@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaChevronDown, FaChevronRight } from "react-icons/fa";
 
 export default function Sort() {
-  const [selectedSort, setSelectedSort] = useState("Default sorting");
+  const [selectedSort, setSelectedSort] = useState("");
   const [showSorting, setShowSorting] = useState(false);
   const sortingOptions = [
     "Default sorting",
@@ -14,10 +14,10 @@ export default function Sort() {
   return (
     <div className="relative">
       <button
-        className="flex items-center text-sm font-semibold justify-between w-[111px]"
+        className="flex items-center text-sm font-semibold gap-3 w-[111px]"
         onClick={() => setShowSorting(!showSorting)}
       >
-        <p>{selectedSort}</p>
+        <p>Sort</p>
         {showSorting ? (
           <FaChevronDown size={10} />
         ) : (
@@ -26,7 +26,7 @@ export default function Sort() {
       </button>
 
       {showSorting && (
-        <div className="absolute right-0 mt-2 w-48 bg-[#F3F6FB] rounded-md shadow-lg z-50">
+        <div className="absolute right-0 mt-2 w-48 bg-[#F3F6FB] dark:bg-black rounded-md shadow-lg z-50">
           <div className="py-1">
             {sortingOptions.map((option) => (
               <button

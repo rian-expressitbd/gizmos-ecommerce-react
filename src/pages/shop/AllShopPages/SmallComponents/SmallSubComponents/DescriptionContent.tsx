@@ -2,7 +2,7 @@
 
 export default function DescriptionContent() {
   return (
-    <div className="prose max-w-none text-sm md:text-base">
+    <div className="prose max-w-none text-sm md:text-base dark:text-white">
     <h2 className="text-lg md:text-xl font-bold mb-3 md:mb-4">
       Product Description
     </h2>

@@ -1,7 +1,3 @@
-import Footer from "@/components/Home/Footer/Footer";
-import Header from "@/components/Home/Header/Header";
-import Navbar from "@/components/Home/Navbar/Navbar";
-import NavbarLower from "@/components/Home/Navbar/NavbarLower";
 import Teams from "./Teams";
 import Video from "./Video";
 import MultiVendor from "./MultiVendor";
@@ -10,9 +6,6 @@ import Blogs from "@/components/Home/Blogs/Blogs";
 export default function About() {
   return (
     <>
-      <Header />
-      <Navbar />
-      <NavbarLower />
       <div>
         <img
           className="w-[100vw] object-cover"
@@ -90,8 +83,6 @@ export default function About() {
       <div className="bg-[#F3F6FB]">
         <Blogs />
       </div>
-
-      <Footer />
     </>
   );
 }

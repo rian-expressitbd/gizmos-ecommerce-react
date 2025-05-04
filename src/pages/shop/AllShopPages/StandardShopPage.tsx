@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
-import CommonLayout from "@/layouts/common-layout";
+
 import ShopWithCategoryRight from "@/pages/ShopWithCategory/ShopWithCategoryRight";
 import {
   categories,
@@ -59,39 +59,44 @@ const StandardShopPage: React.FC = () => {
 
   const FiltersContent = () => (
     <>
-      <h2 className="text-lg font-semibold mb-4">Category</h2>
-      <FilterSection
-        title="Category"
-        items={categories}
-        selectedItems={selectedItems}
-        onItemToggle={handleItemToggle}
-        showViewMore
-      />
-      <FilterSection
-        title="Brand"
-        items={brands}
-        selectedItems={selectedItems}
-        onItemToggle={handleItemToggle}
-      />
-      <FilterSection
-        title="Model"
-        items={models}
-        selectedItems={selectedItems}
-        onItemToggle={handleItemToggle}
-      />
-      <FilterSection
-        title="Color"
-        items={colors}
-        selectedItems={selectedItems}
-        onItemToggle={handleItemToggle}
-      />
-      <PriceFilter priceRange={priceRange} onPriceChange={handlePriceChange} />
-      <ShopBannerCard />
+      <h2 className="text-lg font-semibold mb-4 ">Category</h2>
+      <div className="dark:text-black">
+        <FilterSection
+          title="Category"
+          items={categories}
+          selectedItems={selectedItems}
+          onItemToggle={handleItemToggle}
+          showViewMore
+        />
+        <FilterSection
+          title="Brand"
+          items={brands}
+          selectedItems={selectedItems}
+          onItemToggle={handleItemToggle}
+        />
+        <FilterSection
+          title="Model"
+          items={models}
+          selectedItems={selectedItems}
+          onItemToggle={handleItemToggle}
+        />
+        <FilterSection
+          title="Color"
+          items={colors}
+          selectedItems={selectedItems}
+          onItemToggle={handleItemToggle}
+        />
+        <PriceFilter
+          priceRange={priceRange}
+          onPriceChange={handlePriceChange}
+        />
+        <ShopBannerCard />
+      </div>
     </>
   );
 
   return (
-    <CommonLayout>
+    <>
       <Breadcrumb className="mt-5" />
 
       <MobileFilterToggle
@@ -120,7 +125,7 @@ const StandardShopPage: React.FC = () => {
           <ShopWithCategoryRight />
         </div>
       </div>
-    </CommonLayout>
+    </>
   );
 };
 

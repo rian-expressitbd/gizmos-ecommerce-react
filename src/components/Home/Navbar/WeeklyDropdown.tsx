@@ -58,7 +58,7 @@ export default function WeeklyDropdown({
     isWeeklyDiscountOpen && (
       <div
         ref={weeklyDiscountDropdownRef}
-        className="absolute mt-[1px] right-[6rem] bg-white shadow-xl border rounded-sm py-6 px-4 z-50 text-black"
+        className="absolute mt-[1px] right-[6rem] bg-white dark:bg-black dark:text-white shadow-xl border rounded-sm py-6 px-4 z-50 text-black"
         onMouseEnter={() => setIsWeeklyDiscountOpen(true)}
         onMouseLeave={() => setIsWeeklyDiscountOpen(false)}
       >

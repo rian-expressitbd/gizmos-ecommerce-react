@@ -111,9 +111,9 @@ export default function Blogs() {
   };
 
   return (
-    <div className="py-12">
+    <div className="py-12 dark:bg-black">
       <div className="w-[90%] xl:w-[90%] mx-auto">
-        <h2 className="text-3xl font-bold mb-10 text-gray-800">
+        <h2 className="text-3xl font-bold mb-10 text-gray-800 dark:text-gray-300">
           Latest Blog Posts
         </h2>
 
@@ -139,7 +139,7 @@ export default function Blogs() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-xl font-bold mb-3 text-gray-800">
+                  <h3 className="text-xl font-bold mb-3 text-gray-800 dark:text-white">
                     {post.title}
                   </h3>
 

@@ -12,6 +12,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Sidebar from "./Sidebar";
 import CompareModal from "./CompareModal";
+import ThemeToggler from "@/components/themeToggler";
 
 export default function Navbar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -40,7 +41,7 @@ export default function Navbar() {
 
             {/* Sidebar */}
             <div
-              className={`fixed top-0 left-0 w-[300px] h-full bg-white z-50 transition-transform duration-300 ${
+              className={`fixed top-0 left-0 w-[300px] h-full bg-white dark:bg-black dark:text-white z-50 transition-transform duration-300 ${
                 sidebarOpen ? "translate-x-0" : "-translate-x-full"
               }`}
             >
@@ -48,7 +49,7 @@ export default function Navbar() {
                 Gizmos.
                 <button onClick={() => setSidebarOpen(false)}>✕</button>
               </div>
-              <ul className="p-5 space-y-3 text-gray-700 font-medium">
+              <ul className="p-5 space-y-3 text-gray-700 dark:text-white font-medium">
                 <li>Weekly Bestsellers</li>
                 <li>Premium Tech</li>
                 <li>New Arrivals</li>
@@ -58,13 +59,13 @@ export default function Navbar() {
                     <FaChevronRight size={18} />
                   </span>
                 </li>
-                <li className="flex justify-between items-center cursor-pointer">
+                <li className="flex justify-between dark:text-white items-center cursor-pointer">
                   Technology{" "}
                   <span>
                     <FaChevronRight size={18} />
                   </span>
                 </li>
-                <li className="group relative cursor-pointer">
+                <li className="group relative cursor-pointer dark:text-white">
                   <div className="flex justify-between items-center">
                     Innovative Appliances{" "}
                     <span className="ml-2">
@@ -79,7 +80,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <div className="search mx-auto border-[0.5px] p-3 w-[600px] h-[50px] rounded-[5px] hidden lg:block">
+          <div className="search mx-auto border-[0.5px] p-3 w-[600px] h-[50px] rounded-[5px] hidden lg:block dark:border-gray-100">
             <div className="flex items-center">
               <div className="flex gap-[30px] items-center justify-center">
                 <Dropdown>
@@ -97,7 +98,7 @@ export default function Navbar() {
                 className="bg-gray-300 h-[20px] mx-3"
               />
               <input
-                className="border-0 h-[20px]"
+                className=" bg-transparent"
                 type="text"
                 name=""
                 id=""
@@ -106,6 +107,7 @@ export default function Navbar() {
             </div>
           </div>
           <div className="icons ml-[9px] flex items-center gap-[2px] lg:gap-[10px] justify-end">
+            <ThemeToggler />
             <TbArrowsDoubleNeSw
               size={24}
               onClick={() => setCompareModalOpen(true)}

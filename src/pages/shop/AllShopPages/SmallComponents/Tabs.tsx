@@ -68,7 +68,7 @@ const MobileTabSelector: React.FC<{
   };
 
   return (
-    <div className="relative w-full mb-4 sm:hidden">
+    <div className="relative w-full mb-4 sm:hidden dark:text-white">
       <button
         className="flex items-center justify-between w-full p-3 bg-gray-100 rounded-lg"
         onClick={() => setIsOpen(!isOpen)}
@@ -104,7 +104,7 @@ const SpecificationItem: React.FC<SpecificationItemProps> = ({
   value,
 }) => {
   return (
-    <div className="flex py-2 border-b text-sm md:text-base">
+    <div className="flex py-2 border-b text-sm md:text-base dark:text-white">
       <div className="w-2/5 md:w-1/3 font-medium pr-2">{label}</div>
       <div className="w-3/5 md:w-2/3">{value}</div>
     </div>
@@ -128,10 +128,10 @@ const SpecificationContent: React.FC = () => {
 
   return (
     <div>
-      <h2 className="text-lg md:text-xl font-bold mb-3 md:mb-4">
+      <h2 className="text-lg md:text-xl font-bold mb-3 md:mb-4 dark:text-white">
         Technical Specifications
       </h2>
-      <div className="border-t">
+      <div className="border-t ">
         {specifications.map((spec, index) => (
           <SpecificationItem
             key={index}
@@ -152,10 +152,10 @@ const ReviewCard: React.FC<ReviewProps> = ({
   comment,
 }) => {
   return (
-    <div className="border-b pb-3 md:pb-4 mb-3 md:mb-4 text-sm md:text-base">
+    <div className="border-b pb-3 md:pb-4 mb-3 md:mb-4 text-sm md:text-base dark:text-white">
       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2">
         <h3 className="font-medium">{author}</h3>
-        <span className="text-gray-500 text-xs md:text-sm mt-1 sm:mt-0">
+        <span className="text-gray-500 text-xs md:text-sm mt-1 sm:mt-0 dark:text-white">
           {date}
         </span>
       </div>
@@ -171,7 +171,7 @@ const ReviewCard: React.FC<ReviewProps> = ({
           </span>
         ))}
       </div>
-      <p className="text-gray-700">{comment}</p>
+      <p className="text-gray-700 dark:text-white">{comment}</p>
     </div>
   );
 };
@@ -196,7 +196,7 @@ const ReviewsContent: React.FC = () => {
 
   return (
     <div>
-      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 md:mb-6 gap-3 sm:gap-0">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-4 md:mb-6 gap-3 sm:gap-0 ">
         <h2 className="text-lg md:text-xl font-bold">Customer Reviews (2)</h2>
         <button className="bg-blue-600 text-white px-3 md:px-4 py-2 rounded-lg hover:bg-blue-700 text-sm md:text-base w-full sm:w-auto">
           Write a Review
@@ -268,8 +268,8 @@ const ProductTabSystem: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto px-3 md:px-4 py-4">
-      <div className="flex flex-col lg:flex-row gap-4 lg:gap-6">
+    <div className="container mx-auto px-3 md:px-4 py-4 dark:text-white">
+      <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-6">
         <div className="w-full lg:w-3/4">
           {/* Mobile Tab Selector */}
           <MobileTabSelector
@@ -279,7 +279,7 @@ const ProductTabSystem: React.FC = () => {
           />
 
           {/* Desktop Tabs */}
-          <div className="hidden sm:flex  border-b mb-4 md:mb-6 overflow-x-auto">
+          <div className="hidden sm:flex  border-b mb-4 md:mb-6 overflow-x-auto dark:text-white">
             <Tab
               id="accessories"
               label="Accessories"

@@ -1,7 +1,3 @@
-import Footer from "@/components/Home/Footer/Footer";
-import Header from "@/components/Home/Header/Header";
-import Navbar from "@/components/Home/Navbar/Navbar";
-import NavbarLower from "@/components/Home/Navbar/NavbarLower";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { BiSolidJoystick } from "react-icons/bi";
 import { FaHeadphones, FaTv } from "react-icons/fa";
@@ -11,9 +7,6 @@ import ContactForm from "../faq/ContactForm";
 export default function TermsAndConditions() {
   return (
     <>
-      <Header />
-      <Navbar />
-      <NavbarLower />
       <div className="w-[90%] mx-auto ">
         <Breadcrumb className="mt-5" />
         <h1 className="mt-[50px] text-4xl font-semibold mb-[30px]">
@@ -70,7 +63,7 @@ export default function TermsAndConditions() {
             </p>
             <div className="mt-5">
               <div className="flex gap-2 items-start">
-                <FaTv size={24} className="hidden md:block"/>
+                <FaTv size={24} className="hidden md:block" />
                 <p className="text-sm text-[#677AB0]">
                   Pellentesque porta egestas eros vel sollicitudin. Donec ut
                   nulla pulvinar, lobortis purus eu, interdum urna. Donec
@@ -78,7 +71,7 @@ export default function TermsAndConditions() {
                 </p>
               </div>
               <div className="flex gap-2 items-start mt-2">
-                <BiSolidJoystick size={24} className="hidden md:block"/>
+                <BiSolidJoystick size={24} className="hidden md:block" />
                 <p className="text-sm text-[#677AB0]">
                   Pellentesque porta egestas eros vel sollicitudin. Donec ut
                   nulla pulvinar, lobortis purus eu, interdum urna. Donec
@@ -86,7 +79,7 @@ export default function TermsAndConditions() {
                 </p>
               </div>
               <div className="flex gap-2 items-start mt-2">
-                <TbDeviceWatch size={24} className="hidden md:block"/>
+                <TbDeviceWatch size={24} className="hidden md:block" />
                 <p className="text-sm text-[#677AB0]">
                   Pellentesque porta egestas eros vel sollicitudin. Donec ut
                   nulla pulvinar, lobortis purus eu, interdum urna. Donec
@@ -155,9 +148,7 @@ export default function TermsAndConditions() {
         <hr className="border-gray-300" />
         <ContactForm />
       </div>
-      <div className="mt-[50px]">
-        <Footer />
-      </div>
+      <div className="mt-[50px]"></div>
     </>
   );
 }

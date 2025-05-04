@@ -1,7 +1,3 @@
-import Footer from "@/components/Home/Footer/Footer";
-import Header from "@/components/Home/Header/Header";
-import Navbar from "@/components/Home/Navbar/Navbar";
-import NavbarLower from "@/components/Home/Navbar/NavbarLower";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { ProductCardForLargeImg } from "@/components/ui/cards/ProductCardForLargeImg";
 
@@ -82,15 +78,12 @@ export default function FiveColumnsWide() {
   ];
   return (
     <>
-      <Header />
-
-      <Navbar />
-      <NavbarLower />
+   
       <div className="mt-5 w-[90%] mx-auto">
         <Breadcrumb />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-5 gap-[40px] mt-[50px] mb-5">
+      <div className="grid grid-cols-1 md:grid-cols-4 xl:grid-cols-5 gap-[40px] mt-[50px] mb-5 ">
         {/* Map through products and apply special styling for the 3rd item */}
         {products.map((product, index) => (
           <div
@@ -103,7 +96,6 @@ export default function FiveColumnsWide() {
           </div>
         ))}
       </div>
-      <Footer />
     </>
   );
 }

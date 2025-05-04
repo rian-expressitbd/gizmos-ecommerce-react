@@ -1,9 +1,8 @@
 import { Breadcrumb } from "@/components/ui/breadcrumb";
-import CommonLayout from "@/layouts/common-layout";
 
 export default function PrivacyPolicy() {
   return (
-    <CommonLayout>
+    <>
       <div className="mt-5">
         <Breadcrumb />
       </div>
@@ -119,6 +118,6 @@ export default function PrivacyPolicy() {
           </section>
         </div>
       </div>
-    </CommonLayout>
+    </>
   );
 }

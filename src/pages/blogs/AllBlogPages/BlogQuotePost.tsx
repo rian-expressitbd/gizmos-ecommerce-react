@@ -1,5 +1,5 @@
 import { Breadcrumb } from "@/components/ui/breadcrumb";
-import CommonLayout from "@/layouts/common-layout";
+
 import { Image } from "@/components/ui/image";
 import { FaMagnifyingGlass, FaX } from "react-icons/fa6";
 import { InputField } from "@/components/ui/form/input-field";
@@ -21,27 +21,25 @@ import Infos from "../Infos";
 import Texts from "@/pages/BlogDetails/Texts";
 import TextLarge from "@/pages/BlogDetails/TextLarge";
 
-
 export default function BlogQuotePost() {
   return (
-    <CommonLayout>
+    <>
       <Breadcrumb className="mt-3" />
       <div className="flex mt-[50px] items-start gap-32">
         <div className="w-2/3">
           <div className="">
-          <div className="flex items-center gap-5 mt-3 p-10 mb-5 border rounded-md">
-            <FaQuoteLeft size={44} />
-            <div>
-            <h2 className="text-2xl font-semibold">
-              Lorem ipsum dolor odio vis, consectetur corrumpit dicat. Nam in
-              ante fierent eleifend sapien sale vis.
-            </h2>
-            <div className="mt-5">
-                <p className="text-sm font-bold">Laura Dern</p>
+            <div className="flex items-center gap-5 mt-3 p-10 mb-5 border-2 rounded-md ">
+              <FaQuoteLeft size={44} />
+              <div>
+                <h2 className="text-2xl font-semibold">
+                  Lorem ipsum dolor odio vis, consectetur corrumpit dicat. Nam
+                  in ante fierent eleifend sapien sale vis.
+                </h2>
+                <div className="mt-5">
+                  <p className="text-sm font-bold">Laura Dern</p>
+                </div>
+              </div>
             </div>
-            </div>
-          
-          </div>
 
             <div className="mt-5">
               <p className="text-sm text-gray-400">
@@ -50,7 +48,7 @@ export default function BlogQuotePost() {
               <h3 className="text-2xl font-semibold">
                 Futuristic Interactive Designs
               </h3>
-           <Texts/>
+              <Texts />
             </div>
           </div>
           <div className="flex items-center gap-3 mt-3">
@@ -61,7 +59,7 @@ export default function BlogQuotePost() {
             </h2>
           </div>
           <div className="mt-3">
-           <TextLarge/>
+            <TextLarge />
           </div>
           <div className="mt-3">
             <p className="text-sm text-gray-400">
@@ -73,7 +71,7 @@ export default function BlogQuotePost() {
           </div>
           <div className="mt-[40px]">
             <h3 className="text-2xl font-semibold">Discover the Magic</h3>
-         <TextLarge/>
+            <TextLarge />
 
             <Image
               className="mt-3"
@@ -84,8 +82,8 @@ export default function BlogQuotePost() {
           </div>
           <div className="mt-[40px]">
             <h2 className="text-2xl font-semibold">Planning Point Of View</h2>
-          <TextLarge/>
-          <TextLarge/>
+            <TextLarge />
+            <TextLarge />
           </div>
           <div className="text-sm font-semibold text-gray-500 mb-[40px] mt-[40px] flex justify-between items-center">
             <div>
@@ -192,6 +190,6 @@ export default function BlogQuotePost() {
           </div>
         </div>
       </div>
-    </CommonLayout>
+    </>
   );
 }

@@ -25,7 +25,7 @@ export const FilterSection: React.FC<FilterSectionProps> = ({
   const [expanded, setExpanded] = useState(defaultExpanded);
 
   return (
-    <div className="mb-6">
+    <div className="mb-6 ">
       <div
         className="flex justify-between items-center cursor-pointer"
         onClick={() => setExpanded(!expanded)}

@@ -1,5 +1,5 @@
 import { Breadcrumb } from "@/components/ui/breadcrumb";
-import CommonLayout from "@/layouts/common-layout";
+
 import Map from "../contact/Map";
 import { FaHeadphones, FaTv } from "react-icons/fa";
 import { TbDeviceWatch } from "react-icons/tb";
@@ -7,7 +7,7 @@ import { BiSolidJoystick } from "react-icons/bi";
 
 export default function StoreLocator() {
   return (
-    <CommonLayout>
+    <>
       <div className="mt-3">
         <Breadcrumb />
         <div className="mt-[60px]">
@@ -67,7 +67,9 @@ export default function StoreLocator() {
               </div>
             </div>
             <div>
-              <h2 className="text-2xl font font-semibold mb-5 mt-8 md:mt-0">London Store</h2>
+              <h2 className="text-2xl font font-semibold mb-5 mt-8 md:mt-0">
+                London Store
+              </h2>
               <div className="flex gap-2 items-start">
                 <FaTv size={24} />
                 <p className="text-sm text-[#677AB0]">+000 123 456 789</p>
@@ -92,6 +94,6 @@ export default function StoreLocator() {
           </div>
         </div>
       </div>
-    </CommonLayout>
+    </>
   );
 }

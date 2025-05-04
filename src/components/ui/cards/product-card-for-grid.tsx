@@ -2,7 +2,7 @@ import { Image } from "@/components/ui/image";
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { TbArrowsDoubleNeSw } from "react-icons/tb";
-import toast from 'react-hot-toast';
+import toast from "react-hot-toast";
 
 type Product = {
   id: string | number;
@@ -19,7 +19,7 @@ type ProductCardProps = {
   onWishlistToggle: (productId: string | number) => void;
   isInWishlist: boolean;
 };
-const notify = () => toast('Item added to Wishlist');
+const notify = () => toast("Item added to Wishlist");
 export const ProductCardForGrid = ({
   product,
   onWishlistToggle,
@@ -29,12 +29,12 @@ export const ProductCardForGrid = ({
     e.preventDefault();
     e.stopPropagation();
     onWishlistToggle(product.id);
-    notify()
+    notify();
   };
 
   return (
-    <div className="group border-[0.5px] rounded-[10px] p-3 h-full flex flex-col relative overflow-hidden transition-all duration-300">
-      <div className="flex justify-between z-10 bg-white">
+    <div className="group border-[0.5px] rounded-[10px] p-3 h-full flex flex-col relative overflow-hidden transition-all duration-300 dark:bg-white dark:text-black ">
+      <div className="flex justify-between z-10 bg-white ">
         <p className="text-xs text-gray-400">{product.category}</p>
         <div className="flex flex-col gap-3">
           <button
@@ -54,10 +54,10 @@ export const ProductCardForGrid = ({
         </div>
       </div>
 
-      <div className="flex flex-col flex-grow transition-transform duration-300 group-hover:-translate-y-8">
+      <div className="flex flex-col flex-grow transition-transform duration-300 group-hover:-translate-y-8 ">
         <Image
           src={product.image}
-          className="mx-auto w-full h-[300px] object-contain my-auto"
+          className="mx-auto w-full h-[300px] object-contain my-auto "
           alt={product.title}
         />
 

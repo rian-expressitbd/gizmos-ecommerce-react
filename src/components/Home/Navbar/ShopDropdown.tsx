@@ -11,7 +11,7 @@ export default function ShopDropdown({ setIsShopOpen }: SetIsShopOpenProps) {
   return (
     <div
       ref={shopDropdownRef}
-      className="absolute top-full left-[97px] mt-0 w-[90%] grid grid-cols-5 bg-white shadow-xl border rounded-sm py-4 px-6 z-50 text-black"
+      className="absolute top-full left-[97px] mt-0 w-[90%] grid grid-cols-5 bg-white dark:text-white dark:bg-black shadow-xl border rounded-sm py-4 px-6 z-50 text-black"
       onMouseEnter={() => setIsShopOpen(true)}
       onMouseLeave={() => setIsShopOpen(false)}
     >

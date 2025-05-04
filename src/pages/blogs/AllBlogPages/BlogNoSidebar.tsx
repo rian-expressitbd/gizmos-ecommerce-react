@@ -1,5 +1,5 @@
 import { Breadcrumb } from "@/components/ui/breadcrumb";
-import CommonLayout from "@/layouts/common-layout";
+
 import { Pagination } from "@/components/ui/pagination";
 import BlogWithImages from "../BlogWithImages";
 import Quotation from "../Quotation";
@@ -7,7 +7,7 @@ import Link from "../Link";
 
 export default function BlogNoSidebar() {
   return (
-    <CommonLayout>
+    <>
       <Breadcrumb className="mt-3" />
       <div className="flex flex-col lg:flex-row items-start mx-auto gap-32 mt-[50px]">
         <div className="flex flex-col w-[70%] mx-auto">
@@ -39,6 +39,6 @@ export default function BlogNoSidebar() {
           </div>
         </div>
       </div>
-    </CommonLayout>
+    </>
   );
 }

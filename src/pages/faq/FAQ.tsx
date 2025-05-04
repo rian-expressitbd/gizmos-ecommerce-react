@@ -1,7 +1,3 @@
-import Footer from "@/components/Home/Footer/Footer";
-import Header from "@/components/Home/Header/Header";
-import Navbar from "@/components/Home/Navbar/Navbar";
-import NavbarLower from "@/components/Home/Navbar/NavbarLower";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import FaqAccordion from "./FaqAccordion";
 import { FaMagnifyingGlass } from "react-icons/fa6";
@@ -44,9 +40,6 @@ export default function FAQ() {
   ];
   return (
     <>
-      <Header />
-      <Navbar />
-      <NavbarLower />
       <div className="mx-auto w-[90%]">
         <Breadcrumb className="mt-[30px]" />
         <h1 className="text-4xl font-semibold mt-[40px]">FAQ Page</h1>
@@ -126,7 +119,6 @@ export default function FAQ() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }

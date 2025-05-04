@@ -37,11 +37,11 @@ export const SingleProductAccordion = () => {
       <div className="space-y-4">
         <Accordion trigger="Accesories" defaultOpen={true}>
           <AccordionContent isOpen={true}>
-            <div className="min-h-full w-full flex flex-col gap-6 md:flex-row justify-between items-center">
+            <div className="min-h-full w-full flex flex-col gap-6 md:flex-row justify-between items-center ">
               <div className="md:w-2/3 w-full h-full grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-6">
                 {products.map((product) => (
                   <div
-                    className="group border-[0.5px] rounded-lg h-fit md:h-full p-2 sm:p-3 
+                    className="group  border-[0.5px] rounded-lg h-fit md:h-full p-2 sm:p-3 
                      flex flex-col relative overflow-hidden transition-all duration-300 hover:shadow-md"
                   >
                     {/* Header with category and action icons - fixed position */}
@@ -80,7 +80,7 @@ export const SingleProductAccordion = () => {
                   </div>
                 ))}
               </div>
-              <div className="w-full md:w-fit bg-[#F3F6FB] p-6 h-full min-h-[300px] flex flex-col justify-between ">
+              <div className="w-full md:w-fit bg-[#F3F6FB] dark:bg-black text-white dark:border-[0.5px] border-gray-50 p-6 h-full min-h-[300px] flex flex-col justify-between ">
                 {/* Top-aligned content */}
                 <div>
                   <h2 className="text-xl font-semibold">Your Current Cart</h2>
@@ -103,35 +103,35 @@ export const SingleProductAccordion = () => {
           </AccordionContent>
         </Accordion>
         <Accordion trigger="Description">
-          <div className="space-y-4">
+          <div className="space-y-4 dark:bg-black ">
             <div>
               <h3 className="font-medium">4K Smart Monitor</h3>
-              <p className="text-sm text-gray-600">
+              <p className="text-sm text-gray-600 dark:text-gray-300">
                 VariableNet Expo GPS-587736ck
               </p>
               <p className="font-bold mt-1">$1,150</p>
             </div>
             <div>
               <h3 className="font-medium">Multiusre USB Cable</h3>
-              <p className="text-sm text-gray-600">Phone/Tablet/Laptop</p>
+              <p className="text-sm text-gray-600 dark:text-gray-300">Phone/Tablet/Laptop</p>
               <p className="font-bold mt-1">$42</p>
             </div>
             <div>
               <h3 className="font-medium">Profous Tablet Q Series</h3>
-              <p className="text-sm text-gray-600">QW-SS814 Professional</p>
+              <p className="text-sm text-gray-600 dark:text-gray-300">QW-SS814 Professional</p>
               <p className="font-bold mt-1">$550</p>
             </div>
           </div>
         </Accordion>
 
         <Accordion trigger="Specification">
-          <p className="text-gray-600">
+          <p className="text-gray-600 dark:text-gray-300">
             Product specifications would appear here
           </p>
         </Accordion>
 
         <Accordion trigger="Reviews (0)">
-          <p className="text-gray-600">No reviews yet</p>
+          <p className="text-gray-600 dark:text-gray-300">No reviews yet</p>
         </Accordion>
       </div>
     </div>

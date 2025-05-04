@@ -1,7 +1,7 @@
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { InputField } from "@/components/ui/form/input-field";
 import { Image } from "@/components/ui/image";
-import CommonLayout from "@/layouts/common-layout";
+
 import { FaMagnifyingGlass } from "react-icons/fa6";
 
 import { Pagination } from "@/components/ui/pagination";
@@ -20,7 +20,7 @@ import Iframe from "@/components/ui/Iframe/Iframe";
 
 export default function BlogVideoPost() {
   return (
-    <CommonLayout>
+    <>
       <Breadcrumb className="mt-3" />
       <div className="flex flex-col lg:flex-row items-start gap-32 mt-[50px]">
         <div className="flex flex-col w-2/3">
@@ -30,7 +30,7 @@ export default function BlogVideoPost() {
             src="https://www.youtube.com/embed/JFH9AA6Hl8g"
             title="চাকরির প্রস্তুতি থেকে প্রজেক্ট ডেলিভারি - রিয়্যাক্টিভ এক্সিলারেটর"
           />
-      
+
           <div className="mt-5">
             <p className="text-sm text-gray-400">
               ELECTRONICS | SEPTEMBER 28, 2022
@@ -122,6 +122,6 @@ export default function BlogVideoPost() {
           </div>
         </div>
       </div>
-    </CommonLayout>
+    </>
   );
 }

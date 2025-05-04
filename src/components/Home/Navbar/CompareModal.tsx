@@ -40,20 +40,23 @@ export default function CompareModal({
   ];
   return (
     <>
-      <div
-        className="fixed inset-0 bg-black bg-opacity-50 z-50"
-        onClick={() => setCompareModalOpen(false)}
-      />
-      <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-md shadow-lg z-50 w-[80%] max-w-5xl">
-        <div className="flex justify-between items-center p-4 border-b">
+    <div
+      className="fixed inset-0  bg-opacity-50 z-40"
+      onClick={() => setCompareModalOpen(false)}
+    />
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+      <div className="bg-white dark:bg-black dark:text-white rounded-md shadow-lg w-full max-w-5xl max-h-[90vh] overflow-y-auto">
+        {/* Header */}
+        <div className="flex fixed top-0 justify-between items-center p-4 border-b w-[90%]">
           <h2 className="text-xl font-semibold">Compare products</h2>
-          <button onClick={() => setCompareModalOpen(false)}>
+          <button className="justify-end" onClick={() => setCompareModalOpen(false)}>
             <IoCloseOutline size={24} />
           </button>
         </div>
-
+  
+        {/* Scrollable content */}
         <div className="p-4">
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 bg-white dark:bg-black dark:text-white z-[70]">
             {compareProducts.map((product) => (
               <div key={product.id} className="relative border-r">
                 <button
@@ -64,7 +67,7 @@ export default function CompareModal({
                 >
                   <IoCloseOutline size={20} />
                 </button>
-
+  
                 <div className="flex justify-center py-6">
                   <Image
                     src={product.image}
@@ -72,24 +75,24 @@ export default function CompareModal({
                     className="h-32 object-contain"
                   />
                 </div>
-
+  
                 <div className="text-center">
                   <div className="text-green-600 mb-2">
                     {product.inStock ? "In stock" : "Out of stock"}
                   </div>
-
-                  <div className="text-sm text-gray-600 mb-4">
+  
+                  <div className="text-sm text-gray-600 dark:text-white mb-4">
                     {product.description}
                   </div>
-
+  
                   <div className="mb-2">
                     <span className="font-semibold">SKU:</span> {product.id}
                   </div>
-
+  
                   <div className="font-semibold mb-2">{product.name}</div>
-
+  
                   <div className="text-xl font-bold mb-4">${product.price}</div>
-
+  
                   <button className="bg-blue-600 text-white py-2 px-4 rounded-md flex items-center justify-center w-full border-r">
                     <span>ADD TO CART</span>
                     <svg
@@ -123,6 +126,8 @@ export default function CompareModal({
           </div>
         </div>
       </div>
-    </>
+    </div>
+  </>
+  
   );
 }

@@ -1,5 +1,5 @@
 import { Breadcrumb } from "@/components/ui/breadcrumb";
-import CommonLayout from "@/layouts/common-layout";
+
 import { Image } from "@/components/ui/image";
 import { FaMagnifyingGlass, FaX } from "react-icons/fa6";
 import { InputField } from "@/components/ui/form/input-field";
@@ -24,12 +24,12 @@ import Texts from "@/pages/BlogDetails/Texts";
 
 export default function BlogLinkPost() {
   return (
-    <CommonLayout>
+    <>
       <Breadcrumb className="mt-3" />
       <div className="flex mt-[50px] items-start gap-32">
         <div className="w-2/3">
           <div className="">
-            <div className="bg-[#F3F6FB] flex items-center gap-5 mt-3 p-10 mb-5 border rounded-md">
+            <div className="bg-[#F3F6FB] flex items-center gap-5 mt-3 p-10 mb-5 border rounded-md dark:text-black">
               <LuLink size={44} />
               <div>
                 <h2 className="text-2xl font-semibold">
@@ -186,6 +186,6 @@ export default function BlogLinkPost() {
           </div>
         </div>
       </div>
-    </CommonLayout>
+    </>
   );
 }

@@ -1,6 +1,6 @@
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
-import CommonLayout from "@/layouts/common-layout";
+
 import React, { useState } from "react";
 import { IoShareSocialOutline } from "react-icons/io5";
 import {
@@ -67,7 +67,7 @@ const Wishlist: React.FC = () => {
   ];
 
   return (
-    <CommonLayout>
+    <>
       <div className="mt-5">
         <Breadcrumb />
       </div>
@@ -123,7 +123,7 @@ const Wishlist: React.FC = () => {
           <table className="min-w-full table-auto border-collapse">
             <tbody>
               {initialCart.map((item) => (
-                <tr key={item.id} className="border-b hover:bg-gray-50">
+                <tr key={item.id} className="border-b hover:bg-gray-50 dark:hover:text-black">
                   <td className="p-6 text-red-500 cursor-pointer">✕</td>
                   <td className="p-6 flex items-center gap-4">
                     <img
@@ -160,7 +160,7 @@ const Wishlist: React.FC = () => {
           </table>
         </div>
       </div>
-    </CommonLayout>
+    </>
   );
 };
 

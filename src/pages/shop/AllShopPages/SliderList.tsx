@@ -1,6 +1,6 @@
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { ProductCardForLargeImg } from "@/components/ui/cards/ProductCardForLargeImg";
-import CommonLayout from "@/layouts/common-layout";
+
 import { FC } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Slider from "react-slick";
@@ -135,23 +135,25 @@ export default function SliderShop() {
     ],
   };
   return (
-    <CommonLayout>
-      <div className="mt-5 mb-5">
+    <>
+      <div className="mt-5 mb-5 mx-auto w-[90%]">
         <Breadcrumb />
       </div>
-      <Slider {...settings} className="">
-        {/* Map through products and apply special styling for the 3rd item */}
-        {products.map((product, index) => (
-          <div
-            key={product.id}
-            className={
-              "h-full px-2" // Other items have a fixed height
-            }
-          >
-            <ProductCardForLargeImg index={index} product={product} />
-          </div>
-        ))}
-      </Slider>
-    </CommonLayout>
+      <div className="mx-auto w-[90%]">
+        <Slider {...settings} className="">
+          {/* Map through products and apply special styling for the 3rd item */}
+          {products.map((product, index) => (
+            <div
+              key={product.id}
+              className={
+                "h-full px-2" // Other items have a fixed height
+              }
+            >
+              <ProductCardForLargeImg index={index} product={product} />
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </>
   );
 }

@@ -18,7 +18,7 @@ const Comment: React.FC<CommentProps> = ({ name, date, text, imageUrl }) => {
         />
         <div>
           <div className="text-xs text-gray-400 mb-1">{date}</div>
-          <h4 className="text-lg font-semibold">{name}</h4>
+          <h4 className="text-lg font-semibold dark:text-black">{name}</h4>
           <p className="text-gray-600 text-sm mt-1">{text}</p>
           <button className="mt-2 text-xs font-semibold text-blue-600 flex items-center gap-1 hover:underline">
             Reply To

@@ -21,10 +21,12 @@ export const AccordionTrigger = ({
 }: AccordionTriggerProps) => {
   return (
     <div
-      className="flex justify-between items-center cursor-pointer p-4 border-b border-gray-200 hover:bg-gray-50 transition-colors"
+      className="group flex justify-between items-center cursor-pointer p-4 border-b border-gray-200 hover:bg-gray-50 dark:hover:bg-white transition-colors"
       onClick={onClick}
     >
-      <span className="font-medium text-gray-900">{children}</span>
+      <span className="font-medium text-gray-900 dark:text-white group-hover:text-black">
+        {children}
+      </span>
       <span className="transform transition-transform duration-200 text-gray-500">
         {isOpen ? "▲" : "▼"}
       </span>
@@ -39,11 +41,11 @@ export const AccordionContent = ({
 }: AccordionContentProps) => {
   return (
     <div
-      className={`overflow-hidden transition-all duration-200 ${
+      className={`overflow-hidden transition-all duration-200  ${
         isOpen ? "max-h-full" : "max-h-0"
       }`}
     >
-      <div className="p-4 bg-white">{children}</div>
+      <div className="p-4 bg-white dark:bg-black text-white">{children}</div>
     </div>
   );
 };
@@ -67,7 +69,7 @@ export const Accordion = ({
   };
 
   return (
-    <div className="mb-1 border border-gray-200 rounded-lg overflow-hidden">
+    <div className="mb-1 border border-gray-200 rounded-lg overflow-hidden dark:text-white">
       <AccordionTrigger onClick={toggleAccordion} isOpen={isOpen}>
         {trigger}
       </AccordionTrigger>

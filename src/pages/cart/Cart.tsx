@@ -1,6 +1,6 @@
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { Button } from "@/components/ui/button";
-import CommonLayout from "@/layouts/common-layout";
+
 import React, { useState } from "react";
 
 type CartItem = {
@@ -62,7 +62,7 @@ const CartPage: React.FC = () => {
   );
 
   return (
-    <CommonLayout>
+    <>
       <div className="mt-5">
         <Breadcrumb />
       </div>
@@ -82,7 +82,7 @@ const CartPage: React.FC = () => {
             </thead>
             <tbody>
               {cart.map((item) => (
-                <tr key={item.id} className="border-b hover:bg-gray-50">
+                <tr key={item.id} className="border-b hover:bg-gray-50 dark:hover:text-black">
                   <td className="p-6 text-red-500 cursor-pointer">✕</td>
                   <td className="p-6 flex items-center gap-4">
                     <img
@@ -154,7 +154,7 @@ const CartPage: React.FC = () => {
           </button>
         </div>
       </div>
-    </CommonLayout>
+    </>
   );
 };
 

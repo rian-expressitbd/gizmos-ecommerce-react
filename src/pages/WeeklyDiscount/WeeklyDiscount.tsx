@@ -1,6 +1,6 @@
 import Featured from "@/components/Home/Featured/Featured";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
-import CommonLayout from "@/layouts/common-layout";
+
 import { useState } from "react";
 import { FaChevronDown, FaChevronRight } from "react-icons/fa";
 
@@ -15,7 +15,7 @@ export default function WeeklyDiscount() {
     "Sort by price: low to high",
   ];
   return (
-    <CommonLayout>
+    <>
       <div className="mt-3">
         <Breadcrumb />
       </div>
@@ -63,6 +63,6 @@ export default function WeeklyDiscount() {
       <div className="mt-[40px]">
         <Featured />
       </div>
-    </CommonLayout>
+    </>
   );
 }

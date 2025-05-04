@@ -1,6 +1,6 @@
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { ProductCard } from "@/components/ui/cards/product-card";
-import CommonLayout from "@/layouts/common-layout";
+
 
 export default function BestSellers() {
   const products = [
@@ -87,11 +87,11 @@ export default function BestSellers() {
     },
   ];
   return (
-    <CommonLayout>
-      <div className="mt-3">
+    <>
+      <div className="mt-3 w-[90%] mx-auto">
         <Breadcrumb />
       </div>
-      <div className="mt-[50px] mb-[50px]">
+      <div className="mt-[50px] mb-[50px] w-[90%] mx-auto">
         <h3 className="text-3xl font-semibold">Bestsellers</h3>
         <div className="mt-3">
           <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-6 xl:grid-rows-2 gap-y-[0.5rem] gap-x-[0.5rem]">
@@ -111,6 +111,6 @@ export default function BestSellers() {
           </div>
         </div>
       </div>
-    </CommonLayout>
+    </>
   );
 }

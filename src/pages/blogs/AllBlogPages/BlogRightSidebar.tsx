@@ -1,7 +1,7 @@
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { InputField } from "@/components/ui/form/input-field";
 import { Image } from "@/components/ui/image";
-import CommonLayout from "@/layouts/common-layout";
+
 import { FaMagnifyingGlass } from "react-icons/fa6";
 
 import { Pagination } from "@/components/ui/pagination";
@@ -16,7 +16,7 @@ import Infos from "../Infos";
 
 export default function BlogRightSidebar() {
   return (
-    <CommonLayout>
+    <>
       <Breadcrumb className="mt-3" />
       <div className="flex flex-col lg:flex-row items-start gap-32 mt-[50px]">
         <div className="flex flex-col w-2/3">
@@ -88,6 +88,6 @@ export default function BlogRightSidebar() {
           </div>
         </div>
       </div>
-    </CommonLayout>
+    </>
   );
 }

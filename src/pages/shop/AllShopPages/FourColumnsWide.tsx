@@ -1,7 +1,3 @@
-import Footer from "@/components/Home/Footer/Footer";
-import Header from "@/components/Home/Header/Header";
-import Navbar from "@/components/Home/Navbar/Navbar";
-import NavbarLower from "@/components/Home/Navbar/NavbarLower";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { ProductCardForLargeImg } from "@/components/ui/cards/ProductCardForLargeImg";
 
@@ -82,10 +78,7 @@ export default function FourColumnsWide() {
   ];
   return (
     <>
-      <Header />
-
-      <Navbar />
-      <NavbarLower />
+   
       <div className="mt-5 mx-auto w-[90%]">
         <Breadcrumb />
       </div>
@@ -103,7 +96,6 @@ export default function FourColumnsWide() {
           </div>
         ))}
       </div>
-      <Footer />
     </>
   );
 }

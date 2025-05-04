@@ -1,6 +1,5 @@
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { ProductCardForLargeImg } from "@/components/ui/cards/ProductCardForLargeImg";
-import CommonLayout from "@/layouts/common-layout";
 
 export default function ThreeColumnsShop() {
   const products = [
@@ -78,11 +77,11 @@ export default function ThreeColumnsShop() {
     },
   ];
   return (
-    <CommonLayout>
-      <div className="mt-5">
+    <>
+      <div className="mt-5 w-[90%] mx-auto">
         <Breadcrumb />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-[40px] mt-[50px] mb-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-[40px] mt-[50px] mb-5 w-[90%] mx-auto">
         {/* Map through products and apply special styling for the 3rd item */}
         {products.map((product, index) => (
           <div
@@ -95,6 +94,6 @@ export default function ThreeColumnsShop() {
           </div>
         ))}
       </div>
-    </CommonLayout>
+    </>
   );
 }

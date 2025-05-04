@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
-import CommonLayout from "@/layouts/common-layout";
+
 import ShopRightWithBanner from "@/pages/ShopWithCategory/ShopRightWithBanner";
 import { PriceFilter } from "./SmallComponents/SmallSubComponents/PriceFilter";
 import { FilterSection } from "./SmallComponents/SmallSubComponents/FilterSection";
@@ -134,7 +134,7 @@ const BannerShopPage: React.FC = () => {
   );
 
   return (
-    <CommonLayout>
+    <>
       <Breadcrumb className="mt-5" />
 
       <MobileFilterToggle
@@ -145,7 +145,7 @@ const BannerShopPage: React.FC = () => {
       <div className="mt-[30px] lg:mt-[70px] flex flex-col items-start lg:flex-row gap-6 lg:gap-9">
         {/* Desktop Filters */}
         <div className="hidden lg:block">
-          <div className="w-64 bg-white rounded-lg shadow-sm p-4">
+          <div className="w-64 bg-white rounded-lg shadow-sm p-4 dark:bg-black">
             <FiltersContent />
           </div>
         </div>
@@ -163,7 +163,7 @@ const BannerShopPage: React.FC = () => {
           <ShopRightWithBanner />
         </div>
       </div>
-    </CommonLayout>
+    </>
   );
 };
 

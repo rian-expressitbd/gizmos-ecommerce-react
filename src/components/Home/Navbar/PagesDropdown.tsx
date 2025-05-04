@@ -8,7 +8,7 @@ export default function PagesDropdown() {
       <Link to="" className="text-white h-[60px] flex items-center">
         Pages
       </Link>
-      <div className="absolute top-full left-0 mt-0 w-[200px] bg-white shadow-xl border rounded-sm py-4 p-3 hidden group-hover:flex group-hover:pointer-events-auto flex-col z-50 text-black">
+      <div className="absolute top-full left-0 mt-0 w-[200px] bg-white shadow-xl border rounded-sm py-4 p-3 hidden group-hover:flex group-hover:pointer-events-auto flex-col z-50 text-black dark:bg-black dark:text-white">
         <Link to="/about" className="py-1">
           About Us
         </Link>

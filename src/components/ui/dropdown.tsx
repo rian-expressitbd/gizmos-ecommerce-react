@@ -135,7 +135,7 @@ export const DropdownContent = ({
       <div
         ref={contentRef}
         className={twMerge(
-          "absolute z-50 mt-2 rounded border border-gray-200 bg-white shadow-lg",
+          "absolute z-50 mt-2 rounded border border-gray-200 bg-white dark:bg-black dark:text-white shadow-lg",
           align === "left"
             ? "left-0"
             : align === "right"
@@ -143,7 +143,6 @@ export const DropdownContent = ({
             : "left-1/2 -translate-x-1/2 transform", // Center alignment logic
           className
         )}
-        
       >
         {children}
       </div>

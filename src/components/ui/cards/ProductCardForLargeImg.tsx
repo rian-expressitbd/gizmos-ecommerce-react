@@ -21,7 +21,7 @@ type ProductCardProps = {
 // ProductCard Component
 export const ProductCardForLargeImg = ({ product }: ProductCardProps) => {
   return (
-    <div className="group border-[0.5px] rounded-[10px] p-3 h-full flex flex-col  relative overflow-hidden transition-all duration-300">
+    <div className="group border-[0.5px] rounded-[10px] p-3 h-full flex flex-col  relative overflow-hidden transition-all duration-300 dark:bg-white dark:text-black">
       {/* Header with category and action icons - fixed position */}
       <div className="flex justify-between z-10 bg-white">
         <p className="text-xs text-gray-400">{product.category}</p>
