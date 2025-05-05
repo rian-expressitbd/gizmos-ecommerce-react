@@ -80,7 +80,7 @@ export const SingleProductAccordion = () => {
                   </div>
                 ))}
               </div>
-              <div className="w-full md:w-fit bg-[#F3F6FB] dark:bg-black text-white dark:border-[0.5px] border-gray-50 p-6 h-full min-h-[300px] flex flex-col justify-between ">
+              <div className="w-full md:w-fit bg-[#F3F6FB] dark:bg-black text-black dark:text-white dark:border-[0.5px] border-gray-50 p-6 h-full min-h-[300px] flex flex-col justify-between ">
                 {/* Top-aligned content */}
                 <div>
                   <h2 className="text-xl font-semibold">Your Current Cart</h2>
@@ -89,7 +89,7 @@ export const SingleProductAccordion = () => {
                 {/* Center-aligned content */}
                 <div className="flex flex-col items-center justify-center">
                   <p className="font-bold text-lg">1742$</p>
-                  <p className="text-sm text-gray-600 mt-3">for 3 items(s)</p>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 mt-3">for 3 items(s)</p>
                 </div>
 
                 {/* Bottom-aligned content */}
@@ -113,12 +113,16 @@ export const SingleProductAccordion = () => {
             </div>
             <div>
               <h3 className="font-medium">Multiusre USB Cable</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300">Phone/Tablet/Laptop</p>
+              <p className="text-sm text-gray-600 dark:text-gray-300">
+                Phone/Tablet/Laptop
+              </p>
               <p className="font-bold mt-1">$42</p>
             </div>
             <div>
               <h3 className="font-medium">Profous Tablet Q Series</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300">QW-SS814 Professional</p>
+              <p className="text-sm text-gray-600 dark:text-gray-300">
+                QW-SS814 Professional
+              </p>
               <p className="font-bold mt-1">$550</p>
             </div>
           </div>

@@ -135,32 +135,35 @@ const BannerShopPage: React.FC = () => {
 
   return (
     <>
-      <Breadcrumb className="mt-5" />
+      <div className="mx-auto w-[90%]">
+        <Breadcrumb className="mt-5" />
+      </div>
 
       <MobileFilterToggle
         isOpen={mobileFiltersOpen}
         onToggle={toggleMobileFilters}
       />
-
-      <div className="mt-[30px] lg:mt-[70px] flex flex-col items-start lg:flex-row gap-6 lg:gap-9">
-        {/* Desktop Filters */}
-        <div className="hidden lg:block">
-          <div className="w-64 bg-white rounded-lg shadow-sm p-4 dark:bg-black">
-            <FiltersContent />
+      <div className="mx-auto w-[90%]">
+        <div className="mt-[30px] lg:mt-[70px] flex flex-col items-start lg:flex-row gap-6 lg:gap-9">
+          {/* Desktop Filters */}
+          <div className="hidden lg:block">
+            <div className="w-64 bg-white rounded-lg shadow-sm p-4 dark:bg-black">
+              <FiltersContent />
+            </div>
           </div>
-        </div>
 
-        {/* Mobile Filters Modal */}
-        <MobileFilterModal
-          isOpen={mobileFiltersOpen}
-          onClose={toggleMobileFilters}
-        >
-          <FiltersContent />
-        </MobileFilterModal>
+          {/* Mobile Filters Modal */}
+          <MobileFilterModal
+            isOpen={mobileFiltersOpen}
+            onClose={toggleMobileFilters}
+          >
+            <FiltersContent />
+          </MobileFilterModal>
 
-        {/* Main Content */}
-        <div className="w-full px-4 lg:px-0">
-          <ShopRightWithBanner />
+          {/* Main Content */}
+          <div className="w-full px-4 lg:px-0">
+            <ShopRightWithBanner />
+          </div>
         </div>
       </div>
     </>

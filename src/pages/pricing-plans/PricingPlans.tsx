@@ -5,7 +5,7 @@ import PriceCard from "./PriceCard";
 export default function PricingPlans() {
   return (
     <>
-      <div className="mt-5">
+      <div className="mt-5 mx-auto w-[90%]">
         <Breadcrumb />
         <div className="mt-[60px]">
           <h1 className="text-5xl">Pricing Plans</h1>

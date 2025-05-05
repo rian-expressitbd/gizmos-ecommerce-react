@@ -39,8 +39,8 @@ export default function ShopDropdown({ setIsShopOpen }: SetIsShopOpenProps) {
           <Link to="/shop/cowntdown" className="hover:text-blue-500">
             Cowndown Product
           </Link>
-          <Link to="/shop/dominidable" className="hover:text-blue-500">
-            Dominidable Product
+          <Link to="/shop/downloadable" className="hover:text-blue-500">
+          Downloadable Product
           </Link>
           <Link to="/shop/virtual" className="hover:text-blue-500">
             Virtual Product

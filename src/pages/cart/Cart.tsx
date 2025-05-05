@@ -63,11 +63,11 @@ const CartPage: React.FC = () => {
 
   return (
     <>
-      <div className="mt-5">
+      <div className="mt-5 mx-auto w-[90%]">
         <Breadcrumb />
       </div>
 
-      <div className="px-4 py-10">
+      <div className="px-4 py-10 mx-auto w-[90%]">
         <h2 className="text-2xl font-bold mb-6">Cart</h2>
         <div className="overflow-x-auto">
           <table className="min-w-full table-auto border-collapse">
@@ -82,7 +82,10 @@ const CartPage: React.FC = () => {
             </thead>
             <tbody>
               {cart.map((item) => (
-                <tr key={item.id} className="border-b hover:bg-gray-50 dark:hover:text-black">
+                <tr
+                  key={item.id}
+                  className="border-b hover:bg-gray-50 dark:hover:text-black"
+                >
                   <td className="p-6 text-red-500 cursor-pointer">✕</td>
                   <td className="p-6 flex items-center gap-4">
                     <img

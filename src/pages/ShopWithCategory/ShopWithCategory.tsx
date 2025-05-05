@@ -76,6 +76,7 @@ export default function ShopWithCategory() {
   return (
     <>
       <Breadcrumb className="mt-5" />
+
       <div className="mt-[70px] flex flex-col items-start lg:flex-row gap-9">
         <div className="filters">
           <div className="w-64  bg-white rounded-lg shadow-sm">

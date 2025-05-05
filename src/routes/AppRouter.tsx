@@ -92,6 +92,10 @@ const AppRouter: React.FC = () => {
               element={<SingleProductDetailsOne />}
             />
             <Route path="/shop/virtual" element={<SingleProductDetailsOne />} />
+            <Route
+              path="/shop/downloadable"
+              element={<SingleProductDetailsOne />}
+            />
             <Route path="/shop/groupped" element={<GrouppedProduct />} />
             <Route path="/shop/new" element={<NewProduct />} />
             <Route path="/shop/sale" element={<SaleProduct />} />

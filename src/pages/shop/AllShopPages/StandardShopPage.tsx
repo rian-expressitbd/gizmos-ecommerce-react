@@ -97,14 +97,17 @@ const StandardShopPage: React.FC = () => {
 
   return (
     <>
-      <Breadcrumb className="mt-5" />
+    <div className="mx-auto w-[90%]">
+    <Breadcrumb className="mt-5" />
+    </div>
+      
 
       <MobileFilterToggle
         isOpen={mobileFiltersOpen}
         onToggle={toggleMobileFilters}
       />
 
-      <div className="mt-[30px] lg:mt-[70px] flex flex-col items-start lg:flex-row gap-6 lg:gap-9">
+      <div className="mt-[30px] lg:mt-[70px] flex flex-col items-start lg:flex-row gap-6 lg:gap-9 mx-auto w-[90%]">
         {/* Desktop Filters */}
         <div className="hidden lg:block">
           <div className="w-64 bg-white rounded-lg shadow-sm p-4">

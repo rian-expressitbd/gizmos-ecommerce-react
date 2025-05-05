@@ -5,9 +5,11 @@ import ShopRightWithIcons from "@/pages/ShopWithCategory/ShopRightWithIcons";
 export default function IconShopPage() {
   return (
     <>
-      <Breadcrumb className="mt-5" />
+      <div className="mx-auto w-[90%]">
+        <Breadcrumb className="mt-5" />
 
-      <ShopRightWithIcons />
+        <ShopRightWithIcons />
+      </div>
     </>
   );
 }

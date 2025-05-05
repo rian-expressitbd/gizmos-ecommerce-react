@@ -7,7 +7,7 @@ import CommonContactForm from "../common/CommonContactForm";
 export default function GetInTouch() {
   return (
     <>
-      <div className="mt-5">
+      <div className="mt-5 mx-auto w-[90%]">
         <Breadcrumb />
         <OurVision />
         <div className="flex flex-col lg:flex-row items-center gap-10 mt-[40px] mb-[40px]">

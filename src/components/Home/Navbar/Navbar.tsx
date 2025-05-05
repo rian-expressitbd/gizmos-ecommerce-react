@@ -13,19 +13,23 @@ import { Link } from "react-router-dom";
 import Sidebar from "./Sidebar";
 import CompareModal from "./CompareModal";
 import ThemeToggler from "@/components/themeToggler";
+import MobileNavbarTray from "./MobileNavbarTray";
 
 export default function Navbar() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [compareModalOpen, setCompareModalOpen] = useState(false);
+  const [isMobilemenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div>
-      <div className="w-[90%] mx-auto mt-[30px] mb-[30px] z-50">
+    <div className="sticky top-0  bg-white dark:bg-black dark:text-white py-[30px] z-[60]">
+      <div className="w-[90%] mx-auto  z-50">
         <div className="flex justify-between items-center">
           <div className="logo flex gap-[50px] items-center">
-            <h3 className="font-bold text-4xl">
-              Gizmos<span className="text-orange-500">.</span>
-            </h3>
+            <Link to="/">
+              <h3 className="font-bold text-4xl">
+                Gizmos<span className="text-orange-500">.</span>
+              </h3>
+            </Link>
 
             <GiHamburgerMenu
               size={24}
@@ -88,7 +92,9 @@ export default function Navbar() {
                     <h3>All Items</h3>
                   </DropdownTrigger>
                   <DropdownContent className="p-3 w-full min-w-[100px]">
-                    Macbook Iphone
+                    <Link to="/">Macbook</Link>
+                    <br />
+                    <Link to="/">Iphone</Link>
                   </DropdownContent>
                 </Dropdown>
               </div>
@@ -125,11 +131,14 @@ export default function Navbar() {
             </Link>
             <GiHamburgerMenu
               size={24}
-              onClick={() => setSidebarOpen(true)}
+              onClick={() => setIsMobileMenuOpen(!isMobilemenuOpen)}
               className="cursor-pointer lg:hidden block ml-[2px]"
             />
           </div>
         </div>
+        {isMobilemenuOpen && (
+          <MobileNavbarTray onClose={() => setIsMobileMenuOpen(false)} />
+        )}
       </div>
 
       {/* Compare Products Modal */}

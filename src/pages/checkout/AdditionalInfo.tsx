@@ -3,7 +3,7 @@ export default function AdditionalInfo() {
     <div>
       <h2 className="text-xl font-bold mb-4">ADDITIONAL INFO</h2>
       <div className="mb-8">
-        <label className="block text-sm text-gray-600">
+        <label className="block text-sm text-gray-600 dark:text-white">
           ORDER NOTES (OPTIONAL)
         </label>
         <textarea
@@ -75,7 +75,7 @@ export default function AdditionalInfo() {
           <span>Pay with cash</span>
         </label>
       </div>
-      <p className="text-sm text-gray-600 mt-4">
+      <p className="text-sm text-gray-600 mt-4 dark:text-white">
         Your personal data will be used to process your order, support your
         experience throughout this website, and for other purposes described in
         our{" "}

@@ -8,7 +8,6 @@ type SetCompareModalProps = {
 export default function CompareModal({
   setCompareModalOpen,
 }: SetCompareModalProps) {
-  // Sample product data for comparison
   const compareProducts = [
     {
       id: 348,
@@ -17,7 +16,7 @@ export default function CompareModal({
       image: "/featured1.jpg",
       inStock: true,
       description:
-        "Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expete mei. Mei an consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et. Qui purto zril laoreet. Ex error omnium interpretaris pro.",
+        "Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expete mei. Mei an consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et.",
     },
     {
       id: 349,
@@ -26,7 +25,7 @@ export default function CompareModal({
       image: "/featured2.jpg",
       inStock: true,
       description:
-        "Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expete mei. Mei an consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et. Qui purto zril laoreet. Ex error omnium interpretaris pro.",
+        "Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expete mei. Mei an consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et.",
     },
     {
       id: 350,
@@ -35,65 +34,67 @@ export default function CompareModal({
       image: "/featured3.jpg",
       inStock: true,
       description:
-        "Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expete mei. Mei an consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et. Qui purto zril laoreet. Ex error omnium interpretaris pro.",
+        "Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil expete mei. Mei an consequat an. Eius lorem tincidunt vix at, vel pertinax sensibus id, error epicurei mea et.",
     },
   ];
+
   return (
-    <>
-    <div
-      className="fixed inset-0  bg-opacity-50 z-40"
-      onClick={() => setCompareModalOpen(false)}
-    />
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-      <div className="bg-white dark:bg-black dark:text-white rounded-md shadow-lg w-full max-w-5xl max-h-[90vh] overflow-y-auto">
-        {/* Header */}
-        <div className="flex fixed top-0 justify-between items-center p-4 border-b w-[90%]">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm p-4">
+      <div className="relative w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-md shadow-lg bg-white/80 dark:bg-black/80 backdrop-blur-md dark:text-white">
+        
+        {/* Sticky Glass Header */}
+        <div className="sticky top-0 z-20 flex justify-between items-center p-4 border-b bg-white/60 dark:bg-black/60 backdrop-blur-md">
           <h2 className="text-xl font-semibold">Compare products</h2>
-          <button className="justify-end" onClick={() => setCompareModalOpen(false)}>
+          <button
+            onClick={() => setCompareModalOpen(false)}
+            aria-label="Close"
+            className="p-1 hover:bg-gray-200 dark:hover:bg-gray-800 rounded-full"
+          >
             <IoCloseOutline size={24} />
           </button>
         </div>
-  
-        {/* Scrollable content */}
+
+        {/* Scrollable Content */}
         <div className="p-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 bg-white dark:bg-black dark:text-white z-[70]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {compareProducts.map((product) => (
-              <div key={product.id} className="relative border-r">
+              <div key={product.id} className="relative border-r p-4 rounded-md bg-white/70 dark:bg-black/70 backdrop-blur-md">
                 <button
-                  className="absolute top-0 right-0 p-1"
+                  className="absolute top-2 right-2 p-1 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800"
                   onClick={() => {
-                    /* Remove product from comparison */
+                    /* Implement product removal logic here */
                   }}
+                  aria-label="Remove product"
                 >
                   <IoCloseOutline size={20} />
                 </button>
-  
-                <div className="flex justify-center py-6">
+
+                <div className="flex justify-center py-4">
                   <Image
                     src={product.image}
                     alt={product.name}
                     className="h-32 object-contain"
                   />
                 </div>
-  
+
                 <div className="text-center">
                   <div className="text-green-600 mb-2">
                     {product.inStock ? "In stock" : "Out of stock"}
                   </div>
-  
-                  <div className="text-sm text-gray-600 dark:text-white mb-4">
+
+                  <div className="text-sm text-gray-600 dark:text-gray-300 mb-4">
                     {product.description}
                   </div>
-  
+
                   <div className="mb-2">
                     <span className="font-semibold">SKU:</span> {product.id}
                   </div>
-  
+
                   <div className="font-semibold mb-2">{product.name}</div>
-  
+
                   <div className="text-xl font-bold mb-4">${product.price}</div>
-  
-                  <button className="bg-blue-600 text-white py-2 px-4 rounded-md flex items-center justify-center w-full border-r">
+
+                  <button className="bg-blue-600 hover:bg-blue-700 transition text-white py-2 px-4 rounded-md w-full flex items-center justify-center">
                     <span>ADD TO CART</span>
                     <svg
                       className="ml-2 w-4 h-4"
@@ -125,9 +126,8 @@ export default function CompareModal({
             ))}
           </div>
         </div>
+        
       </div>
     </div>
-  </>
-  
   );
 }

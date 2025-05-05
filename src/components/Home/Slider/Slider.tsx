@@ -46,7 +46,7 @@ const PrevArrow = ({ onClick }: ArrowProps) => (
   <Button
     title="prev_arrow"
     onClick={() => onClick?.()}
-    className="absolute left-[-57px] top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-black p-2 rounded-full shadow-md z-10"
+    className="absolute left-0 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-black p-2 rounded-full shadow-md z-10"
   >
     <FaChevronLeft />
   </Button>

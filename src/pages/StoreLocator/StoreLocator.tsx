@@ -8,7 +8,7 @@ import { BiSolidJoystick } from "react-icons/bi";
 export default function StoreLocator() {
   return (
     <>
-      <div className="mt-3">
+      <div className="mt-3 mx-auto w-[90%]">
         <Breadcrumb />
         <div className="mt-[60px]">
           <h1 className="text-5xl">Store Locator</h1>

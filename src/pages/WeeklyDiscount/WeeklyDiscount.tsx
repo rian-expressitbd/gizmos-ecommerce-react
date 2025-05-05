@@ -16,10 +16,10 @@ export default function WeeklyDiscount() {
   ];
   return (
     <>
-      <div className="mt-3">
+      <div className="mt-3 mx-auto w-[90%]">
         <Breadcrumb />
       </div>
-      <div className="mt-5 flex justify-between items-center">
+      <div className="mt-5 flex justify-between items-center mx-auto w-[90%]">
         <p className="text-sm">Showing 5 results</p>
 
         {/* Sorting Dropdown */}
